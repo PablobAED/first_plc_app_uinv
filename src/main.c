@@ -37,24 +37,6 @@ static volatile uint32_t nBytesRead = 0;
 volatile bool txThresholdEventReceived = false;
 volatile bool rxThresholdEventReceived = false;
 
-//void usartReadEventHandler(FLEXCOM_USART_EVENT event, uintptr_t context )
-//{
-    //uint32_t nBytesAvailable = 0;
-    
-   // if (event == FLEXCOM_USART_EVENT_READ_THRESHOLD_REACHED)
-   // {
-        /* Receiver should atleast have the thershold number of bytes in the ring buffer */
-       // nBytesAvailable = FLEXCOM0_USART_ReadCountGet();
-        
-      //  nBytesRead += FLEXCOM0_USART_Read((uint8_t*)&rxBuffer[nBytesRead], nBytesAvailable);                          
-   // }
-//}
-
-//void usartWriteEventHandler(FLEXCOM_USART_EVENT event, uintptr_t context )
-//{
-//    txThresholdEventReceived = true;
-//}
-
 FLEXCOM_USART_SERIAL_SETUP setup = {
     115200,
     FLEXCOM_USART_DATA_8_BIT,

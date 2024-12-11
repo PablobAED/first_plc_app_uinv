@@ -53,6 +53,83 @@ static CACHE_ALIGN uint8_t appPlcTxFrameBuffer[CACHE_ALIGNED_SIZE_GET(MAC_RT_DAT
 static uint8_t appTxPayload[APP_TX_PAYLOAD_LEN] =
     {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09};
 
+// Declarations related to UART communication with c2000
+
+APP_PLC_DATA appPlc;
+APP_PLC_DATA_TX appPlcTx;
+
+static CACHE_ALIGN uint8_t appPlcPibDataBuffer[CACHE_ALIGNED_SIZE_GET(APP_PLC_PIB_BUFFER_SIZE)];
+static CACHE_ALIGN uint8_t appPlcTxDataBuffer[CACHE_ALIGNED_SIZE_GET(APP_PLC_BUFFER_SIZE)];       
+
+static uint8_t *pReceivedChar;  //Apunta al buffer rxBuffer donde se guarda el mensaje recibido por UART
+
+static uint8_t rxBuffer[512];   //Buffer en el que se recibe el mensaje enviado por texas a través de UART
+volatile static uint32_t nBytesRead = 0;    //Contador de bytes recibidos por UART
+volatile static uint16_t length_msg_pot = 512;  //longitud del mensaje recibido por UART. length_msg_pot = rxBuffer[0]
+volatile static bool rxThresholdEventReceived = false;  //Cada cuantos bytes recibidos leer ring buffer
+static uint32_t cont;   //cada cuantos mensajes recibidos por UART se manda un mensaje por PLC. Esto se deberá de modificar de forma que por PLC sea periódico con un tiempo especifico
+                        //Para conseguir esto, usar una interrupción con un timer que tenga en el hardware la MTG?
+
+// Functions related to UART communication with c2000
+
+volatile bool timeout_occurred = false;
+
+void usartReadEventHandler(UART_EVENT event, uintptr_t context )    
+{
+    uint32_t nBytesAvailable = 0;
+    
+    if (event == UART_EVENT_READ_THRESHOLD_REACHED)
+    {
+        /* Receiver should atleast have the thershold number of bytes in the ring buffer */
+        nBytesAvailable = UART_ReadCountGet();
+        
+        nBytesRead += UART_Read((uint8_t*)&rxBuffer[nBytesRead], nBytesAvailable); 
+        length_msg_pot = rxBuffer[0];
+    }
+}
+
+void resetUARTTimeout() {
+    timeout_occurred = false;
+    TC0_CH0_TimerStop();   // Detén el temporizador
+    TC0_CH0_TimerStart();  // Reinícialo
+}
+// Función de inicialización del temporizador
+void TimerInitialize()
+{
+    // Inicializa el temporizador con el periodo deseado
+    TC0_CH0_TimerInitialize();
+    
+    // Configura el periodo del temporizador para que expire en el tiempo deseado
+    uint32_t timerPeriod = 500000000U; // Ajusta este valor en función del reloj y del tiempo deseado
+    TC0_CH0_TimerPeriodSet(timerPeriod);
+    
+    // Registra el callback del temporizador para manejar la expiración por inactividad
+    TC0_CH0_TimerCallbackRegister(UARTTimeoutCallback, (uintptr_t)NULL);
+    
+    // Inicia el temporizador
+    TC0_CH0_TimerStart();
+}
+// Callback que se llama cuando el temporizador expira
+void UARTTimeoutCallback(TC_TIMER_STATUS status, uintptr_t context) {
+    // Esta función se llama cuando el temporizador expira
+    timeout_occurred = true;  // Marca que ocurrió un timeout por inactividad
+}
+void UART_Reset(void){
+    UART_Initialize();
+    /* Configure UART callbacks */
+    /* Register a callback for read events */
+    UART_ReadCallbackRegister(usartReadEventHandler, (uintptr_t) NULL);              
+
+    /* Enable notifications */
+    UART_WriteNotificationEnable(true, false);
+
+    /* For demonstration purpose, set a threshold value to receive a callback after every 5 characters are received */
+    UART_ReadThresholdSet(1);
+
+    /* Enable RX event notifications */
+    UART_ReadNotificationEnable(true, false); 
+}
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Internal Functions

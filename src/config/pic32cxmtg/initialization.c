@@ -287,6 +287,8 @@ void SYS_Initialize ( void* data )
 
 
 
+	UART_Initialize();
+
 	BSP_Initialize();
     ADC_Initialize();
     FLEXCOM5_SPI_Initialize();
@@ -294,7 +296,8 @@ void SYS_Initialize ( void* data )
  
     TC0_CH0_TimerInitialize(); 
      
-
+    
+    FLEXCOM0_USART_Initialize();
 
 	TRNG_Initialize();
 
@@ -323,8 +326,6 @@ void SYS_Initialize ( void* data )
 
     /* MISRAC 2012 deviation block end */
     APP_Initialize();
-    
-    FLEXCOM0_USART_Initialize();
 
 
     NVIC_Initialize();

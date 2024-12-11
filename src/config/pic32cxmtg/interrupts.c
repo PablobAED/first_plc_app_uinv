@@ -79,7 +79,7 @@ void __attribute__((optimize("-O1"), long_call, noreturn, used))Dummy_Handler(vo
 }
 
 /* MISRAC 2012 deviation block start */
-/* MISRA C-2012 Rule 8.6 deviated 85 times.  Deviation record ID -  H3_MISRAC_2012_R_8_6_DR_1 */
+/* MISRA C-2012 Rule 8.6 deviated 84 times.  Deviation record ID -  H3_MISRAC_2012_R_8_6_DR_1 */
 /* Device vectors list dummy definition*/
 extern void SVCall_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void PendSV_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler")));
@@ -161,7 +161,6 @@ extern void TC3_C1SEC_Handler          ( void ) __attribute__((weak, alias("Dumm
 extern void TC3_C2SEC_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void PIOD_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void PIOD_SEC_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void UART_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void MCSPI_Handler              ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void PWM_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void MATRIX2_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
@@ -271,7 +270,7 @@ const H3DeviceVectors exception_table=
     .pfnTC3_C2SEC_Handler          = TC3_C2SEC_Handler,
     .pfnPIOD_Handler               = PIOD_Handler,
     .pfnPIOD_SEC_Handler           = PIOD_SEC_Handler,
-    .pfnUART_Handler               = UART_Handler,
+    .pfnUART_Handler               = UART_InterruptHandler,
     .pfnMCSPI_Handler              = MCSPI_Handler,
     .pfnPWM_Handler                = PWM_Handler,
     .pfnMATRIX2_Handler            = MATRIX2_Handler,

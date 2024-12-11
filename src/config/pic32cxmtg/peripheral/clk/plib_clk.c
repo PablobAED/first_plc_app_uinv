@@ -439,6 +439,8 @@ static void PeripheralClockInitialize(void)
 
         { ID_PIOD, 1U, 0U, 0U, 0U},
 
+        { ID_UART, 1U, 0U, 0U, 0U},
+
         { ID_PERIPH_MAX + 1, 0, 0, 0, 0}//end of list marker
     };
     uint32_t count = sizeof(periphList)/sizeof(periphList[0]);

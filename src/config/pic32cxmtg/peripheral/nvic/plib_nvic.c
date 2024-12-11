@@ -67,6 +67,8 @@ void NVIC_Initialize( void )
     NVIC_EnableIRQ(ADC_IRQn);
     NVIC_SetPriority(TC0_CH0_IRQn, 8);
     NVIC_EnableIRQ(TC0_CH0_IRQn);
+    NVIC_SetPriority(UART_IRQn, 9);
+    NVIC_EnableIRQ(UART_IRQn);
 
     /* Enable Usage fault */
     SCB->SHCSR |= (SCB_SHCSR_USGFAULTENA_Msk);
