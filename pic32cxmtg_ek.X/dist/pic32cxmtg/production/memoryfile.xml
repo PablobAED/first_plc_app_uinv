@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/pic32cxmtg/production/pic32cxmtg_ek.X.production.elf">
+    <memory name="program">
+      <units>bytes</units>
+      <length>1048576</length>
+      <used>88660</used>
+      <free>959916</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>524288</length>
+      <used>4810</used>
+      <free>519478</free>
+    </memory>
+  </executable>
+</project>
