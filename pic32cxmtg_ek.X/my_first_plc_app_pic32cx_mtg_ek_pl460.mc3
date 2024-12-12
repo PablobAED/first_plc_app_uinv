@@ -4025,7 +4025,7 @@
         &lt;ElementPosition dnOrder=&quot;13&quot; id=&quot;sys_time&quot; x=&quot;374&quot; y=&quot;105&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;14&quot; id=&quot;tc0&quot; x=&quot;196&quot; y=&quot;152&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;15&quot; id=&quot;trng&quot; x=&quot;510&quot; y=&quot;21&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;uart&quot; x=&quot;505&quot; y=&quot;134&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;uart&quot; x=&quot;505&quot; y=&quot;133&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
   &lt;/UserData&gt;
@@ -4891,6 +4891,50 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_42_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_42_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;UART_URXD&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_42_PERIPHERAL_FUNCTION"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_42_PERIPHERAL_FUNCTION&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;A&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_43_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_43_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;UART_UTXD&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_43_PERIPHERAL_FUNCTION"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_43_PERIPHERAL_FUNCTION&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;A&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_63_FUNCTION_TYPE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_63_FUNCTION_TYPE&quot;&gt;
@@ -5437,7 +5481,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_D_MSKR_ValueA&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x0&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x6&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -20622,7 +20666,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cxmtg\definitions.h</file>
-         <hash>02f0fdaf69e6235f4bc472c10a9bf478d5a3af9c3e6444ea6cdf4d225365977b</hash>
+         <hash>baf926064b563c67418af9b01c28d13c73ab73000518049248e6f4ad288072c7</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cxmtg\device.h</file>
@@ -20798,7 +20842,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cxmtg\peripheral\pio\plib_pio.c</file>
-         <hash>e89fc3fddd0253fac25c4c8a013d2a0291f453d9e69d6d6b3858a5714ab6c34e</hash>
+         <hash>b51bec453bfdde95f3a7ff66b540aa43edf8cacd5a4af3ed2ab52f035de0d87e</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cxmtg\peripheral\pio\plib_pio.h</file>
@@ -20878,7 +20922,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cxmtg\pin_configurations.csv</file>
-         <hash>69fc276988e7244429a36702bc2c242f948ef8a2ea9c4e365935a2feb75cd66b</hash>
+         <hash>cb10f239e49c3d54ff4b36e56c5bb564d4bb363c67cba9f97376f501d413914f</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cxmtg\service\pcoup\srv_pcoup.c</file>

@@ -117,6 +117,8 @@ build/pic32cxmtg/production/_ext/1545560501/exceptions.o: \
  ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_local.h \
  ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_definitions.h \
  ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_comm.h \
+ ../src/config/pic32cxmtg/peripheral/uart/plib_uart.h \
+ ../src/config/pic32cxmtg/peripheral/uart/plib_uart_common.h \
  ../src/config/pic32cxmtg/peripheral/dwdt/plib_dwdt.h \
  ../src/config/pic32cxmtg/peripheral/clk/plib_clk.h \
  ../src/config/pic32cxmtg/peripheral/rstc/plib_rstc.h \
@@ -138,12 +140,12 @@ build/pic32cxmtg/production/_ext/1545560501/exceptions.o: \
  ../src/config/pic32cxmtg/peripheral/flexcom/usart/plib_flexcom_usart_local.h \
  ../src/config/pic32cxmtg/peripheral/sefc/plib_sefc0.h \
  ../src/config/pic32cxmtg/peripheral/sefc/plib_sefc_common.h \
+ ../src/config/pic32cxmtg/peripheral/sefc/plib_sefc1.h \
  ../src/config/pic32cxmtg/system/time/sys_time.h \
  ../src/config/pic32cxmtg/system/time/sys_time_definitions.h \
  ../src/config/pic32cxmtg/system/int/sys_int.h \
  ../src/config/pic32cxmtg/system/int/sys_int_mapping.h \
  ../src/config/pic32cxmtg/configuration.h \
- ../src/config/pic32cxmtg/peripheral/sefc/plib_sefc1.h \
  ../src/config/pic32cxmtg/service/pvddmon/srv_pvddmon.h \
  ../src/config/pic32cxmtg/interrupts.h \
  ../src/config/pic32cxmtg/peripheral/adc/plib_adc_common.h \
@@ -393,6 +395,10 @@ build/pic32cxmtg/production/_ext/1545560501/exceptions.o: \
 
 ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_comm.h:
 
+../src/config/pic32cxmtg/peripheral/uart/plib_uart.h:
+
+../src/config/pic32cxmtg/peripheral/uart/plib_uart_common.h:
+
 ../src/config/pic32cxmtg/peripheral/dwdt/plib_dwdt.h:
 
 ../src/config/pic32cxmtg/peripheral/clk/plib_clk.h:
@@ -435,6 +441,8 @@ build/pic32cxmtg/production/_ext/1545560501/exceptions.o: \
 
 ../src/config/pic32cxmtg/peripheral/sefc/plib_sefc_common.h:
 
+../src/config/pic32cxmtg/peripheral/sefc/plib_sefc1.h:
+
 ../src/config/pic32cxmtg/system/time/sys_time.h:
 
 ../src/config/pic32cxmtg/system/time/sys_time_definitions.h:
@@ -444,8 +452,6 @@ build/pic32cxmtg/production/_ext/1545560501/exceptions.o: \
 ../src/config/pic32cxmtg/system/int/sys_int_mapping.h:
 
 ../src/config/pic32cxmtg/configuration.h:
-
-../src/config/pic32cxmtg/peripheral/sefc/plib_sefc1.h:
 
 ../src/config/pic32cxmtg/service/pvddmon/srv_pvddmon.h:
 

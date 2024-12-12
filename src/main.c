@@ -58,7 +58,7 @@ int main ( void )
     SYS_Initialize ( NULL );
     FLEXCOM0_USART_SerialSetup(&setup, 0);
   
-    FLEXCOM0_USART_Write((uint8_t*)"Programa arrancado", 18);
+    //FLEXCOM0_USART_Write((uint8_t*)"_PROGRAM_ON_",10);
     while ( true )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */

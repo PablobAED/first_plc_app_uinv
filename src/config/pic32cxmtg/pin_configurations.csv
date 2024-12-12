@@ -38,8 +38,8 @@ Pin Number,Pin ID,Custom Name,Function,Direction,Latch,Open Drain,PIO Interrupt,
 38,PA13,,Available,In,,,,,,,
 39,PA14,,Available,In,,,,,,,
 40,PA15,,Available,In,,,,,,,
-42,PD1,,Available,In,,,,,,,
-43,PD2,,Available,In,,,,,,,
+42,PD1,,UART_URXD,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
+43,PD2,,UART_UTXD,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
 44,PD12,,Available,In,,,,,,,
 45,PD13,,Available,In,,,,,,,
 46,PA20,,Available,In,,,,,,,

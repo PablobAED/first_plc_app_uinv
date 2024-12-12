@@ -50,16 +50,13 @@ APP_PLC_DATA_TX appPlcTx;
 static CACHE_ALIGN uint8_t appPlcTxFrameBuffer[CACHE_ALIGNED_SIZE_GET(MAC_RT_DATA_MAX_SIZE)];
 
 #define APP_TX_PAYLOAD_LEN  10
-static uint8_t appTxPayload[APP_TX_PAYLOAD_LEN] =
-    {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09};
+/*static uint8_t appTxPayload[APP_TX_PAYLOAD_LEN] =
+    {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09};*/
 
 // Declarations related to UART communication with c2000
 
 APP_PLC_DATA appPlc;
-APP_PLC_DATA_TX appPlcTx;
-
-static CACHE_ALIGN uint8_t appPlcPibDataBuffer[CACHE_ALIGNED_SIZE_GET(APP_PLC_PIB_BUFFER_SIZE)];
-static CACHE_ALIGN uint8_t appPlcTxDataBuffer[CACHE_ALIGNED_SIZE_GET(APP_PLC_BUFFER_SIZE)];       
+APP_PLC_DATA_TX appPlcTx;     
 
 static uint8_t *pReceivedChar;  //Apunta al buffer rxBuffer donde se guarda el mensaje recibido por UART
 
@@ -67,8 +64,6 @@ static uint8_t rxBuffer[512];   //Buffer en el que se recibe el mensaje enviado 
 volatile static uint32_t nBytesRead = 0;    //Contador de bytes recibidos por UART
 volatile static uint16_t length_msg_pot = 512;  //longitud del mensaje recibido por UART. length_msg_pot = rxBuffer[0]
 volatile static bool rxThresholdEventReceived = false;  //Cada cuantos bytes recibidos leer ring buffer
-static uint32_t cont;   //cada cuantos mensajes recibidos por UART se manda un mensaje por PLC. Esto se deberá de modificar de forma que por PLC sea periódico con un tiempo especifico
-                        //Para conseguir esto, usar una interrupción con un timer que tenga en el hardware la MTG?
 
 // Functions related to UART communication with c2000
 
@@ -77,14 +72,19 @@ volatile bool timeout_occurred = false;
 void usartReadEventHandler(UART_EVENT event, uintptr_t context )    
 {
     uint32_t nBytesAvailable = 0;
+
     
+    //FLEXCOM0_USART_Write((uint8_t*)"_HAND",5);
     if (event == UART_EVENT_READ_THRESHOLD_REACHED)
     {
-        /* Receiver should atleast have the thershold number of bytes in the ring buffer */
+        /* Receiver should atleast have the threshold number of bytes in the ring buffer */
+        //FLEXCOM0_USART_Write((uint8_t*)"_REACH",6);
         nBytesAvailable = UART_ReadCountGet();
         
         nBytesRead += UART_Read((uint8_t*)&rxBuffer[nBytesRead], nBytesAvailable); 
         length_msg_pot = rxBuffer[0];
+        
+        //FLEXCOM0_USART_Write(&rxBuffer[nBytesRead],10);
     }
 }
 
@@ -93,6 +93,13 @@ void resetUARTTimeout() {
     TC0_CH0_TimerStop();   // Detén el temporizador
     TC0_CH0_TimerStart();  // Reinícialo
 }
+
+// Callback que se llama cuando el temporizador expira
+void UARTTimeoutCallback(TC_TIMER_STATUS status, uintptr_t context) {
+    // Esta función se llama cuando el temporizador expira
+    timeout_occurred = true;  // Marca que ocurrió un timeout por inactividad
+}
+
 // Función de inicialización del temporizador
 void TimerInitialize()
 {
@@ -109,11 +116,7 @@ void TimerInitialize()
     // Inicia el temporizador
     TC0_CH0_TimerStart();
 }
-// Callback que se llama cuando el temporizador expira
-void UARTTimeoutCallback(TC_TIMER_STATUS status, uintptr_t context) {
-    // Esta función se llama cuando el temporizador expira
-    timeout_occurred = true;  // Marca que ocurrió un timeout por inactividad
-}
+
 void UART_Reset(void){
     UART_Initialize();
     /* Configure UART callbacks */
@@ -331,7 +334,7 @@ static void APP_PLC_SendData ( void )
         pFrame += headerLen;
 
         /* Fill Payload */
-        memcpy(pFrame, appTxPayload, APP_TX_PAYLOAD_LEN);
+        memcpy(pFrame, pReceivedChar, APP_TX_PAYLOAD_LEN);
         pFrame += APP_TX_PAYLOAD_LEN;
 
         /* Send MAC RT Frame */
@@ -415,6 +418,7 @@ void APP_Tasks ( void )
     {
         case APP_PLC_STATE_IDLE:
         {
+            //FLEXCOM0_USART_Write((uint8_t*)"IDLE", 4);
             /* Initialize PLC driver */
             appPlc.state = APP_PLC_STATE_INIT;
             break;
@@ -422,25 +426,47 @@ void APP_Tasks ( void )
 
         case APP_PLC_STATE_INIT:
         {
+            //FLEXCOM0_USART_Write((uint8_t*)"INIT", 4);
+            // Inicializa y configura el temporizador para el timeout de UART
+            //TimerInitialize(); De momento comento estas lineas. No se porque pero si no el código no se ejecuta
+            //FLEXCOM0_USART_Write((uint8_t*)"1",1);
+            /* Configure UART callbacks */
+            /* Register a callback for read events */
+            UART_ReadCallbackRegister(usartReadEventHandler, (uintptr_t) NULL);              
+            //FLEXCOM0_USART_Write((uint8_t*)"2",1);
+            /* Enable notifications */
+            UART_WriteNotificationEnable(true, false);
+            //FLEXCOM0_USART_Write((uint8_t*)"3",1);
+            /* For demonstration purpose, set a threshold value to receive a callback after every 5 characters are received */
+            UART_ReadThresholdSet(1);
+            //FLEXCOM0_USART_Write((uint8_t*)"4",1);
+            /* Enable RX event notifications */
+            UART_ReadNotificationEnable(true, false); 
+            //FLEXCOM0_USART_Write((uint8_t*)"5",1);
             /* Set G3 MAC RT initialization callback */
             DRV_G3_MACRT_InitCallbackRegister(DRV_G3_MACRT_INDEX_0, APP_PLC_G3MACRTInitCallback);
-
+            //FLEXCOM0_USART_Write((uint8_t*)"6",1);
             /* Open PLC driver */
             appPlc.drvPlcHandle = DRV_G3_MACRT_Open(DRV_G3_MACRT_INDEX_0, NULL);
-
+            //FLEXCOM0_USART_Write((uint8_t*)"7",1);
+            
+            
             if (appPlc.drvPlcHandle != DRV_HANDLE_INVALID)
             {
                 appPlc.state = APP_PLC_STATE_OPEN;
+                //FLEXCOM0_USART_Write((uint8_t*)"8_",1);
             }
             else
             {
                 appPlc.state = APP_PLC_STATE_ERROR;
+                //FLEXCOM0_USART_Write((uint8_t*)"9",1);
             }
             break;
         }
 
         case APP_PLC_STATE_OPEN:
         {
+            //FLEXCOM0_USART_Write((uint8_t*)"OPEN", 4);
             /* Check PLC transceiver */
             if (DRV_G3_MACRT_Status(DRV_G3_MACRT_INDEX_0) == DRV_G3_MACRT_STATE_READY)
             {
@@ -461,10 +487,38 @@ void APP_Tasks ( void )
                 appPlc.tmr1Handle = SYS_TIME_CallbackRegisterMS(APP_PLC_Timer1_Callback, 0, LED_BLINK_RATE_MS, SYS_TIME_PERIODIC);
 
                 /* Set PLC state */
-                appPlc.state = APP_PLC_STATE_SET_NEXT_TX;
+                appPlc.state = APP_PLC_STATE_UART_RECEIVE;
             }
             break;
         }
+        
+        case APP_PLC_STATE_UART_RECEIVE:
+        {
+            //FLEXCOM0_USART_Write((uint8_t*)"UART RECEIVE", 12);
+            // Si ocurrió un timeout, reiniciar el UART
+            if (timeout_occurred) {
+                UART_Reset();  // Reinicia UART si ocurrió un timeout
+                resetUARTTimeout();  // Reinicia el temporizador para el próximo mensaje
+            }
+            if (nBytesRead >= length_msg_pot + 1){ // Si el mensaje se ha recibido completo, se envia por PLC. Habrá que modificarlo de forma que se envie siempre con un timer periodicamente en vez del contador
+                
+                nBytesRead = 0;
+                //FLEXCOM0_USART_Write((uint8_t *)pReceivedChar, length_msg_pot);
+                pReceivedChar = rxBuffer + 1;
+                resetUARTTimeout();
+                
+                //FLEXCOM0_USART_Write((uint8_t*)"_TRANSMIT_", 9);
+                FLEXCOM0_USART_Write((uint8_t*)pReceivedChar, length_msg_pot);
+                appPlc.state = APP_PLC_STATE_SET_NEXT_TX;
+            }
+            
+            
+            
+            break;
+        }
+            
+        
+        
 
         case APP_PLC_STATE_SET_NEXT_TX:
         {

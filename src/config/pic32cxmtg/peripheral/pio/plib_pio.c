@@ -112,6 +112,10 @@ void PIO_Initialize ( void )
    PIOB_REGS->PIO_CODR = 0x8002U;
 
 
+ /* Port D Peripheral function A configuration */
+   PIOD_REGS->PIO_MSKR = 0x6U;
+   PIOD_REGS->PIO_CFGR = 0x1U;
+
  /* Port D Peripheral function GPIO configuration */
    PIOD_REGS->PIO_MSKR = 0x98008U;
    PIOD_REGS->PIO_CFGR = 0x0U;
