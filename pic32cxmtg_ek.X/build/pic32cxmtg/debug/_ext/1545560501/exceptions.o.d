@@ -126,16 +126,17 @@ build/pic32cxmtg/debug/_ext/1545560501/exceptions.o: \
  ../src/config/pic32cxmtg/peripheral/cmcc/plib_cmcc.h \
  ../src/config/pic32cxmtg/peripheral/pio/plib_pio.h \
  ../src/config/pic32cxmtg/peripheral/supc/plib_supc.h \
+ ../src/config/pic32cxmtg/bsp/bsp.h \
  ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_definitions.h \
  ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt.h \
  ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_comm.h \
- ../src/config/pic32cxmtg/bsp/bsp.h \
  ../src/config/pic32cxmtg/peripheral/adc/plib_adc.h \
  ../src/config/pic32cxmtg/peripheral/adc/plib_adc_common.h \
  ../src/config/pic32cxmtg/peripheral/flexcom/spi/master/plib_flexcom5_spi_master.h \
  ../src/config/pic32cxmtg/peripheral/flexcom/spi/master/plib_flexcom_spi_master_common.h \
- ../src/config/pic32cxmtg/peripheral/tc/plib_tc0.h \
+ ../src/config/pic32cxmtg/peripheral/tc/plib_tc1.h \
  ../src/config/pic32cxmtg/peripheral/tc/plib_tc_common.h \
+ ../src/config/pic32cxmtg/peripheral/tc/plib_tc0.h \
  ../src/config/pic32cxmtg/peripheral/flexcom/usart/plib_flexcom0_usart.h \
  ../src/config/pic32cxmtg/peripheral/flexcom/usart/plib_flexcom_usart_local.h \
  ../src/config/pic32cxmtg/peripheral/sefc/plib_sefc0.h \
@@ -146,10 +147,10 @@ build/pic32cxmtg/debug/_ext/1545560501/exceptions.o: \
  ../src/config/pic32cxmtg/system/int/sys_int.h \
  ../src/config/pic32cxmtg/system/int/sys_int_mapping.h \
  ../src/config/pic32cxmtg/configuration.h \
+ ../src/config/pic32cxmtg/peripheral/trng/plib_trng.h \
  ../src/config/pic32cxmtg/service/pvddmon/srv_pvddmon.h \
  ../src/config/pic32cxmtg/interrupts.h \
  ../src/config/pic32cxmtg/peripheral/adc/plib_adc_common.h \
- ../src/config/pic32cxmtg/peripheral/trng/plib_trng.h \
  ../src/config/pic32cxmtg/system/int/sys_int.h \
  ../src/config/pic32cxmtg/system/ports/sys_ports.h \
  ../src/config/pic32cxmtg/system/cache/sys_cache.h \
@@ -413,13 +414,13 @@ build/pic32cxmtg/debug/_ext/1545560501/exceptions.o: \
 
 ../src/config/pic32cxmtg/peripheral/supc/plib_supc.h:
 
+../src/config/pic32cxmtg/bsp/bsp.h:
+
 ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_definitions.h:
 
 ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt.h:
 
 ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_comm.h:
-
-../src/config/pic32cxmtg/bsp/bsp.h:
 
 ../src/config/pic32cxmtg/peripheral/adc/plib_adc.h:
 
@@ -429,9 +430,11 @@ build/pic32cxmtg/debug/_ext/1545560501/exceptions.o: \
 
 ../src/config/pic32cxmtg/peripheral/flexcom/spi/master/plib_flexcom_spi_master_common.h:
 
-../src/config/pic32cxmtg/peripheral/tc/plib_tc0.h:
+../src/config/pic32cxmtg/peripheral/tc/plib_tc1.h:
 
 ../src/config/pic32cxmtg/peripheral/tc/plib_tc_common.h:
+
+../src/config/pic32cxmtg/peripheral/tc/plib_tc0.h:
 
 ../src/config/pic32cxmtg/peripheral/flexcom/usart/plib_flexcom0_usart.h:
 
@@ -453,13 +456,13 @@ build/pic32cxmtg/debug/_ext/1545560501/exceptions.o: \
 
 ../src/config/pic32cxmtg/configuration.h:
 
+../src/config/pic32cxmtg/peripheral/trng/plib_trng.h:
+
 ../src/config/pic32cxmtg/service/pvddmon/srv_pvddmon.h:
 
 ../src/config/pic32cxmtg/interrupts.h:
 
 ../src/config/pic32cxmtg/peripheral/adc/plib_adc_common.h:
-
-../src/config/pic32cxmtg/peripheral/trng/plib_trng.h:
 
 ../src/config/pic32cxmtg/system/int/sys_int.h:
 

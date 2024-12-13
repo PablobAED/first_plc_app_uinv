@@ -90,8 +90,8 @@ void usartReadEventHandler(UART_EVENT event, uintptr_t context )
 
 void resetUARTTimeout() {
     timeout_occurred = false;
-    TC0_CH0_TimerStop();   // Detén el temporizador
-    TC0_CH0_TimerStart();  // Reinícialo
+    TC1_CH0_TimerStop();   // Detén el temporizador
+    TC1_CH0_TimerStart();  // Reinícialo
 }
 
 // Callback que se llama cuando el temporizador expira
@@ -104,17 +104,17 @@ void UARTTimeoutCallback(TC_TIMER_STATUS status, uintptr_t context) {
 void TimerInitialize()
 {
     // Inicializa el temporizador con el periodo deseado
-    TC0_CH0_TimerInitialize();
+    TC1_CH0_TimerInitialize();
     
     // Configura el periodo del temporizador para que expire en el tiempo deseado
-    uint32_t timerPeriod = 500000000U; // Ajusta este valor en función del reloj y del tiempo deseado
-    TC0_CH0_TimerPeriodSet(timerPeriod);
+    uint32_t timerPeriod = 15625000U; // Ajusta este valor en función del reloj y del tiempo deseado
+    TC1_CH0_TimerPeriodSet(timerPeriod);
     
     // Registra el callback del temporizador para manejar la expiración por inactividad
-    TC0_CH0_TimerCallbackRegister(UARTTimeoutCallback, (uintptr_t)NULL);
+    TC1_CH0_TimerCallbackRegister(UARTTimeoutCallback, (uintptr_t)NULL);
     
     // Inicia el temporizador
-    TC0_CH0_TimerStart();
+    TC1_CH0_TimerStart();
 }
 
 void UART_Reset(void){
@@ -471,7 +471,7 @@ void APP_Tasks ( void )
         {
             //FLEXCOM0_USART_Write((uint8_t*)"INIT", 4);
             // Inicializa y configura el temporizador para el timeout de UART
-            //TimerInitialize(); 
+            TimerInitialize(); 
             //FLEXCOM0_USART_Write((uint8_t*)"1",1);
             /* Configure UART callbacks */
             /* Register a callback for read events */
@@ -548,7 +548,7 @@ void APP_Tasks ( void )
                 nBytesRead = 0;
                 //FLEXCOM0_USART_Write((uint8_t *)pReceivedChar, length_msg_pot);
                 pReceivedChar = rxBuffer + 1;
-                //resetUARTTimeout();
+                resetUARTTimeout();
                 
                 //FLEXCOM0_USART_Write((uint8_t*)"_TRANSMIT_", 9);
                 FLEXCOM0_USART_Write((uint8_t*)pReceivedChar, length_msg_pot);

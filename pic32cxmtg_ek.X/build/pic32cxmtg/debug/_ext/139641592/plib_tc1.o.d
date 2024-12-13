@@ -1,6 +1,5 @@
-build/pic32cxmtg/debug/_ext/1545560501/interrupts.o: \
- ../src/config/pic32cxmtg/interrupts.c \
- ../src/config/pic32cxmtg/configuration.h ../src/config/pic32cxmtg/user.h \
+build/pic32cxmtg/debug/_ext/139641592/plib_tc1.o: \
+ ../src/config/pic32cxmtg/peripheral/tc/plib_tc1.c \
  ../src/config/pic32cxmtg/device.h \
  ../src/packs/PIC32CX2051MTG128_DFP/pic32cx2051mtg128.h \
  ../src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h \
@@ -93,77 +92,12 @@ build/pic32cxmtg/debug/_ext/1545560501/interrupts.o: \
  ../src/packs/PIC32CX2051MTG128_DFP/instance/uart.h \
  ../src/packs/PIC32CX2051MTG128_DFP/pio/pic32cx2051mtg128.h \
  ../src/config/pic32cxmtg/device_cache.h \
+ ../src/config/pic32cxmtg/device.h \
  ../src/config/pic32cxmtg/toolchain_specifics.h \
  ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h \
- ../src/config/pic32cxmtg/device_vectors.h \
- ../src/config/pic32cxmtg/interrupts.h \
- ../src/config/pic32cxmtg/definitions.h \
- ../src/config/pic32cxmtg/service/pcoup/srv_pcoup.h \
- ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt.h \
- ../src/config/pic32cxmtg/driver/driver.h \
- ../src/config/pic32cxmtg/driver/driver_common.h \
- ../src/config/pic32cxmtg/system/system.h \
- ../src/config/pic32cxmtg/system/system_common.h \
- ../src/config/pic32cxmtg/system/system_module.h \
- ../src/config/pic32cxmtg/system/system_common.h \
- ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_comm.h \
- ../src/config/pic32cxmtg/device.h \
- ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_definitions.h \
- ../src/config/pic32cxmtg/driver/plc/common/drv_plc_hal.h \
- ../src/config/pic32cxmtg/system/ports/sys_ports.h \
- ../src/config/pic32cxmtg/system/ports/sys_ports_mapping.h \
- ../src/config/pic32cxmtg/peripheral/pio/plib_pio.h \
- ../src/config/pic32cxmtg/peripheral/flexcom/spi/master/plib_flexcom_spi_master_common.h \
- ../src/config/pic32cxmtg/driver/plc/common/drv_plc_boot.h \
- ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_local.h \
- ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_definitions.h \
- ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_comm.h \
- ../src/config/pic32cxmtg/peripheral/uart/plib_uart.h \
- ../src/config/pic32cxmtg/peripheral/uart/plib_uart_common.h \
- ../src/config/pic32cxmtg/peripheral/dwdt/plib_dwdt.h \
- ../src/config/pic32cxmtg/peripheral/clk/plib_clk.h \
- ../src/config/pic32cxmtg/peripheral/rstc/plib_rstc.h \
- ../src/config/pic32cxmtg/peripheral/nvic/plib_nvic.h \
- ../src/config/pic32cxmtg/peripheral/cmcc/plib_cmcc.h \
- ../src/config/pic32cxmtg/peripheral/pio/plib_pio.h \
- ../src/config/pic32cxmtg/peripheral/supc/plib_supc.h \
- ../src/config/pic32cxmtg/bsp/bsp.h \
- ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_definitions.h \
- ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt.h \
- ../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_comm.h \
- ../src/config/pic32cxmtg/peripheral/adc/plib_adc.h \
- ../src/config/pic32cxmtg/peripheral/adc/plib_adc_common.h \
- ../src/config/pic32cxmtg/peripheral/flexcom/spi/master/plib_flexcom5_spi_master.h \
- ../src/config/pic32cxmtg/peripheral/flexcom/spi/master/plib_flexcom_spi_master_common.h \
  ../src/config/pic32cxmtg/peripheral/tc/plib_tc1.h \
  ../src/config/pic32cxmtg/peripheral/tc/plib_tc_common.h \
- ../src/config/pic32cxmtg/peripheral/tc/plib_tc0.h \
- ../src/config/pic32cxmtg/peripheral/flexcom/usart/plib_flexcom0_usart.h \
- ../src/config/pic32cxmtg/peripheral/flexcom/usart/plib_flexcom_usart_local.h \
- ../src/config/pic32cxmtg/peripheral/sefc/plib_sefc0.h \
- ../src/config/pic32cxmtg/peripheral/sefc/plib_sefc_common.h \
- ../src/config/pic32cxmtg/peripheral/sefc/plib_sefc1.h \
- ../src/config/pic32cxmtg/system/time/sys_time.h \
- ../src/config/pic32cxmtg/system/time/sys_time_definitions.h \
- ../src/config/pic32cxmtg/system/int/sys_int.h \
- ../src/config/pic32cxmtg/system/int/sys_int_mapping.h \
- ../src/config/pic32cxmtg/configuration.h \
- ../src/config/pic32cxmtg/peripheral/trng/plib_trng.h \
- ../src/config/pic32cxmtg/service/pvddmon/srv_pvddmon.h \
- ../src/config/pic32cxmtg/interrupts.h \
- ../src/config/pic32cxmtg/peripheral/adc/plib_adc_common.h \
- ../src/config/pic32cxmtg/system/int/sys_int.h \
- ../src/config/pic32cxmtg/system/ports/sys_ports.h \
- ../src/config/pic32cxmtg/system/cache/sys_cache.h \
- ../src/config/pic32cxmtg/osal/osal.h \
- ../src/config/pic32cxmtg/osal/osal_definitions.h \
- ../src/config/pic32cxmtg/osal/osal_impl_basic.h \
- ../src/config/pic32cxmtg/system/debug/sys_debug.h ../src/app.h \
- ../src/config/pic32cxmtg/definitions.h
-
-../src/config/pic32cxmtg/configuration.h:
-
-../src/config/pic32cxmtg/user.h:
+ ../src/config/pic32cxmtg/interrupts.h
 
 ../src/config/pic32cxmtg/device.h:
 
@@ -349,138 +283,14 @@ build/pic32cxmtg/debug/_ext/1545560501/interrupts.o: \
 
 ../src/config/pic32cxmtg/device_cache.h:
 
+../src/config/pic32cxmtg/device.h:
+
 ../src/config/pic32cxmtg/toolchain_specifics.h:
 
 ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h:
-
-../src/config/pic32cxmtg/device_vectors.h:
-
-../src/config/pic32cxmtg/interrupts.h:
-
-../src/config/pic32cxmtg/definitions.h:
-
-../src/config/pic32cxmtg/service/pcoup/srv_pcoup.h:
-
-../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt.h:
-
-../src/config/pic32cxmtg/driver/driver.h:
-
-../src/config/pic32cxmtg/driver/driver_common.h:
-
-../src/config/pic32cxmtg/system/system.h:
-
-../src/config/pic32cxmtg/system/system_common.h:
-
-../src/config/pic32cxmtg/system/system_module.h:
-
-../src/config/pic32cxmtg/system/system_common.h:
-
-../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_comm.h:
-
-../src/config/pic32cxmtg/device.h:
-
-../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_definitions.h:
-
-../src/config/pic32cxmtg/driver/plc/common/drv_plc_hal.h:
-
-../src/config/pic32cxmtg/system/ports/sys_ports.h:
-
-../src/config/pic32cxmtg/system/ports/sys_ports_mapping.h:
-
-../src/config/pic32cxmtg/peripheral/pio/plib_pio.h:
-
-../src/config/pic32cxmtg/peripheral/flexcom/spi/master/plib_flexcom_spi_master_common.h:
-
-../src/config/pic32cxmtg/driver/plc/common/drv_plc_boot.h:
-
-../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_local.h:
-
-../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_definitions.h:
-
-../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_comm.h:
-
-../src/config/pic32cxmtg/peripheral/uart/plib_uart.h:
-
-../src/config/pic32cxmtg/peripheral/uart/plib_uart_common.h:
-
-../src/config/pic32cxmtg/peripheral/dwdt/plib_dwdt.h:
-
-../src/config/pic32cxmtg/peripheral/clk/plib_clk.h:
-
-../src/config/pic32cxmtg/peripheral/rstc/plib_rstc.h:
-
-../src/config/pic32cxmtg/peripheral/nvic/plib_nvic.h:
-
-../src/config/pic32cxmtg/peripheral/cmcc/plib_cmcc.h:
-
-../src/config/pic32cxmtg/peripheral/pio/plib_pio.h:
-
-../src/config/pic32cxmtg/peripheral/supc/plib_supc.h:
-
-../src/config/pic32cxmtg/bsp/bsp.h:
-
-../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_definitions.h:
-
-../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt.h:
-
-../src/config/pic32cxmtg/driver/plc/g3MacRt/drv_g3_macrt_comm.h:
-
-../src/config/pic32cxmtg/peripheral/adc/plib_adc.h:
-
-../src/config/pic32cxmtg/peripheral/adc/plib_adc_common.h:
-
-../src/config/pic32cxmtg/peripheral/flexcom/spi/master/plib_flexcom5_spi_master.h:
-
-../src/config/pic32cxmtg/peripheral/flexcom/spi/master/plib_flexcom_spi_master_common.h:
 
 ../src/config/pic32cxmtg/peripheral/tc/plib_tc1.h:
 
 ../src/config/pic32cxmtg/peripheral/tc/plib_tc_common.h:
 
-../src/config/pic32cxmtg/peripheral/tc/plib_tc0.h:
-
-../src/config/pic32cxmtg/peripheral/flexcom/usart/plib_flexcom0_usart.h:
-
-../src/config/pic32cxmtg/peripheral/flexcom/usart/plib_flexcom_usart_local.h:
-
-../src/config/pic32cxmtg/peripheral/sefc/plib_sefc0.h:
-
-../src/config/pic32cxmtg/peripheral/sefc/plib_sefc_common.h:
-
-../src/config/pic32cxmtg/peripheral/sefc/plib_sefc1.h:
-
-../src/config/pic32cxmtg/system/time/sys_time.h:
-
-../src/config/pic32cxmtg/system/time/sys_time_definitions.h:
-
-../src/config/pic32cxmtg/system/int/sys_int.h:
-
-../src/config/pic32cxmtg/system/int/sys_int_mapping.h:
-
-../src/config/pic32cxmtg/configuration.h:
-
-../src/config/pic32cxmtg/peripheral/trng/plib_trng.h:
-
-../src/config/pic32cxmtg/service/pvddmon/srv_pvddmon.h:
-
 ../src/config/pic32cxmtg/interrupts.h:
-
-../src/config/pic32cxmtg/peripheral/adc/plib_adc_common.h:
-
-../src/config/pic32cxmtg/system/int/sys_int.h:
-
-../src/config/pic32cxmtg/system/ports/sys_ports.h:
-
-../src/config/pic32cxmtg/system/cache/sys_cache.h:
-
-../src/config/pic32cxmtg/osal/osal.h:
-
-../src/config/pic32cxmtg/osal/osal_definitions.h:
-
-../src/config/pic32cxmtg/osal/osal_impl_basic.h:
-
-../src/config/pic32cxmtg/system/debug/sys_debug.h:
-
-../src/app.h:
-
-../src/config/pic32cxmtg/definitions.h:

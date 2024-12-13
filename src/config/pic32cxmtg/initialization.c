@@ -294,6 +294,10 @@ void SYS_Initialize ( void* data )
     FLEXCOM5_SPI_Initialize();
 
  
+    TC1_CH0_TimerInitialize(); 
+     
+    
+ 
     TC0_CH0_TimerInitialize(); 
      
     
