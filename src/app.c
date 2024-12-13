@@ -49,7 +49,7 @@ APP_PLC_DATA_TX appPlcTx;
 
 static CACHE_ALIGN uint8_t appPlcTxFrameBuffer[CACHE_ALIGNED_SIZE_GET(MAC_RT_DATA_MAX_SIZE)];
 
-#define APP_TX_PAYLOAD_LEN  10
+//#define APP_TX_PAYLOAD_LEN  10
 /*static uint8_t appTxPayload[APP_TX_PAYLOAD_LEN] =
     {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09};*/
 
@@ -299,12 +299,55 @@ static void APP_PLC_DataCfmCallback( MAC_RT_TX_CFM_OBJ *cfmObj )
     appPlcTx.lastTxStatus = cfmObj->status;
 }
 
-static void APP_PLC_DataIndCallback( uint8_t *pData, uint16_t length )
+
+static uint8_t APP_PLC_GetMacRTHeaderInfo ( uint8_t *pFrame )
 {
+    uint8_t *pData;
+    uint16_t address;
+
+    /* Frame Struct :
+     * Frame Control(2b) + Seq Num(1b) + Dest PAN ID(2b) + Dest Addr(2b) + Src Addr(2b) */
+
+    pData = pFrame;
+    pData += 2;
+
+    pData++; /* Sequence number */
+
+    pData += 2; /* PAN ID */
+
+    /* Destination address */
+    address = *pData++;
+    address += (uint16_t)*pData++ << 8;
+
+    /* panIdCompression = 1 -> No Source PAN ID */
+
+    /* Source address */
+    address = *pData++;
+    address += (uint16_t)*pData++ << 8;
+
+    /* Return Header length */
+    return (uint8_t)(pData - pFrame);
+}
+
+
+static void APP_PLC_DataIndCallback( uint8_t *pData, uint16_t length ) //AQUI SE GESTIONA LA RECEPCION
+{
+    uint8_t *pFrame;
+    uint8_t headerLength;
+
+    
     /* Turn on indication LED and start timer to turn it off */
     SYS_TIME_TimerDestroy(appPlc.tmr2Handle);
     USER_PLC_IND_LED_On();
     appPlc.tmr2Handle = SYS_TIME_CallbackRegisterMS(APP_PLC_Timer2_Callback, 0, LED_PLC_RX_MSG_RATE_MS, SYS_TIME_SINGLE);
+    
+    /* Extract MAC RT Header */
+    pFrame = pData;
+    headerLength = APP_PLC_GetMacRTHeaderInfo(pFrame);
+    pFrame += headerLength;
+
+    /* Show Payload */  
+    FLEXCOM0_USART_Write(pFrame,length - headerLength);
 }
 
 static void APP_PLC_RxParamsIndCallback( MAC_RT_RX_PARAMETERS_OBJ *pParameters )
@@ -334,8 +377,8 @@ static void APP_PLC_SendData ( void )
         pFrame += headerLen;
 
         /* Fill Payload */
-        memcpy(pFrame, pReceivedChar, APP_TX_PAYLOAD_LEN);
-        pFrame += APP_TX_PAYLOAD_LEN;
+        memcpy(pFrame, pReceivedChar,length_msg_pot );
+        pFrame += length_msg_pot;
 
         /* Send MAC RT Frame */
         DRV_G3_MACRT_TxRequest(appPlc.drvPlcHandle, appPlcTx.pTxFrame,
@@ -428,7 +471,7 @@ void APP_Tasks ( void )
         {
             //FLEXCOM0_USART_Write((uint8_t*)"INIT", 4);
             // Inicializa y configura el temporizador para el timeout de UART
-            //TimerInitialize(); De momento comento estas lineas. No se porque pero si no el código no se ejecuta
+            //TimerInitialize(); 
             //FLEXCOM0_USART_Write((uint8_t*)"1",1);
             /* Configure UART callbacks */
             /* Register a callback for read events */
@@ -473,7 +516,7 @@ void APP_Tasks ( void )
                 /* Configure PLC callbacks */
                 DRV_G3_MACRT_ExceptionCallbackRegister(appPlc.drvPlcHandle, APP_PLC_ExceptionCallback);
                 DRV_G3_MACRT_TxCfmCallbackRegister(appPlc.drvPlcHandle, APP_PLC_DataCfmCallback);
-                DRV_G3_MACRT_DataIndCallbackRegister(appPlc.drvPlcHandle, APP_PLC_DataIndCallback);
+                DRV_G3_MACRT_DataIndCallbackRegister(appPlc.drvPlcHandle, APP_PLC_DataIndCallback); // Aqui gestiona la 
                 DRV_G3_MACRT_RxParamsIndCallbackRegister(appPlc.drvPlcHandle, APP_PLC_RxParamsIndCallback);
 
                 /* Enable PLC Transmission */
@@ -505,7 +548,7 @@ void APP_Tasks ( void )
                 nBytesRead = 0;
                 //FLEXCOM0_USART_Write((uint8_t *)pReceivedChar, length_msg_pot);
                 pReceivedChar = rxBuffer + 1;
-                resetUARTTimeout();
+                //resetUARTTimeout();
                 
                 //FLEXCOM0_USART_Write((uint8_t*)"_TRANSMIT_", 9);
                 FLEXCOM0_USART_Write((uint8_t*)pReceivedChar, length_msg_pot);
@@ -523,9 +566,9 @@ void APP_Tasks ( void )
         case APP_PLC_STATE_SET_NEXT_TX:
         {
             uint16_t randMs;
-
-            randMs = (uint16_t)TRNG_ReadData();
-            randMs &= 0x07FF; /* Keep it under 2 seconds */
+            //FLEXCOM0_USART_Write((uint8_t*)"_SET_NEXT_TX_", 13);
+            //randMs = (uint16_t)TRNG_ReadData();
+            randMs = 0x00C8; /* Keep it under 2 seconds */
 
             SYS_TIME_TimerDestroy(appPlc.tmr3Handle);
             appPlc.tmr3Handle = SYS_TIME_CallbackRegisterMS(APP_PLC_Timer3_Callback, 0, randMs, SYS_TIME_SINGLE);
@@ -537,11 +580,13 @@ void APP_Tasks ( void )
 
         case APP_PLC_STATE_WAITING:
         {
+            //FLEXCOM0_USART_Write((uint8_t*)"_APP_PLC_STATE_WAITING_", 23);
             break;
         }
 
         case APP_PLC_STATE_TX:
         {
+            //FLEXCOM0_USART_Write((uint8_t*)"_STATE_TX", 8);
             APP_PLC_SendData();
             break;
         }
@@ -550,7 +595,7 @@ void APP_Tasks ( void )
         {
             if (appPlc.plcTxState != APP_PLC_TX_STATE_WAIT_TX_CFM)
             {
-                 appPlc.state = APP_PLC_STATE_SET_NEXT_TX;
+                 appPlc.state = APP_PLC_STATE_UART_RECEIVE;
             }
             break;
         }

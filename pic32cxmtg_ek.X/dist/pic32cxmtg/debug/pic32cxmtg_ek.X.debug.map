@@ -35,191 +35,188 @@ section                    address  length [bytes]      (dec)  Description
 .rodata                  0x1000200        0x12300       74496  Read-only const 
 .text.SRV_PCOUP_Set_Con  0x1012500          0x32c         812   
 .dinit                   0x101282c          0x2e0         736   
-.text.APP_Tasks          0x1012b0c          0x2cc         716   
-.text                    0x1012dd8          0x2bc         700  App's exec code 
-.text.DRV_G3_MACRT_Exte  0x1013094          0x280         640   
-.text.DRV_PLC_BOOT_Task  0x1013314          0x1d8         472   
-.text.CLK_Initialize     0x10134ec          0x194         404   
-.text.DRV_G3_MACRT_Task  0x1013680          0x13c         316   
-.rodata.srvPlcCoup       0x10137bc          0x11c         284   
-.text.PIO_Initialize     0x10138d8           0xfc         252   
-.text.DRV_PLC_HAL_SendW  0x10139d4           0xf4         244   
-.text.FLEXCOM0_USART_Se  0x1013ac8           0xe8         232   
-.text.SYS_TIME_PLIBCall  0x1013bb0           0xd8         216   
-.text.SYS_TIME_Initiali  0x1013c88           0xcc         204   
-.text.APP_PLC_G3MACRTIn  0x1013d54           0xb8         184   
-.text.FLEXCOM5_Interrup  0x1013e0c           0xb4         180   
-.text.SYS_TIME_TimerObj  0x1013ec0           0xb0         176   
-.text.FLEXCOM5_SPI_Writ  0x1013f70           0xac         172   
-.text.SYS_TIME_HwTimerC  0x101401c           0xa8         168   
-.text.Reset_Handler      0x10140c4           0xa4         164   
-.text.lDRV_PLC_BOOT_Ena  0x1014168           0x9c         156   
-.text.DRV_PLC_HAL_SendB  0x1014204           0x98         152   
-.text.UART_ISR_RX_Handl  0x101429c           0x94         148   
-.rodata.srvPlcCoupPredi  0x1014330           0x90         144   
-.rodata.srvPlcCoupPredi  0x10143c0           0x90         144   
-.text.SYS_TIME_AddToLis  0x1014450           0x90         144   
-.text.DRV_G3_MACRT_PIBS  0x10144e0           0x8c         140   
-.text.NVIC_Initialize    0x101456c           0x88         136   
-.text.PLLInitialize      0x10145f4           0x84         132   
-.text.UART_Read          0x1014678           0x84         132   
-.text.DRV_G3_MACRT_TxRe  0x10146fc           0x7c         124   
-.text.UART_ISR_TX_Handl  0x1014778           0x7c         124   
-.text.SYS_Initialize     0x10147f4           0x78         120   
-.text.SRV_PVDDMON_Resta  0x101486c           0x74         116   
-.text.DRV_PLC_BOOT_Rest  0x10148e0           0x6c         108   
-.text.PIO_PinInterruptC  0x101494c           0x6c         108   
-.text.lDRV_G3_MACRT_COM  0x10149b8           0x68         104   
-.text.SRV_PVDDMON_Start  0x1014a20           0x68         104   
-.text.DRV_PLC_HAL_Reset  0x1014a88           0x64         100   
-.text.DRV_PLC_HAL_SetSt  0x1014aec           0x64         100   
-.text.DRV_G3_MACRT_Init  0x1014b50           0x64         100   
-.text.lDRV_G3_MACRT_COM  0x1014bb4           0x64         100   
-.text.DRV_G3_MACRT_Task  0x1014c18           0x5c          92   
-.text.FLEXCOM5_SPI_Tran  0x1014c74           0x5c          92   
-.text.SYS_TIME_RemoveFr  0x1014cd0           0x5c          92   
-.text.__libc_start_init  0x1014d2c           0x5c          92   
-.text.lDRV_PLC_BOOT_Get  0x1014d88           0x58          88   
-.text.DRV_G3_MACRT_Open  0x1014de0           0x58          88   
-.text.RSTC_PMCResetStat  0x1014e38           0x58          88   
-.text.SYS_TIME_TimerAdd  0x1014e90           0x58          88   
-.text.SYS_TIME_TimerSta  0x1014ee8           0x58          88   
-.text.SYS_TIME_Callback  0x1014f40           0x54          84   
-.text.lDRV_PLC_BOOT_Dis  0x1014f94           0x50          80   
-.text.lDRV_G3_MACRT_COM  0x1014fe4           0x50          80   
-.text.FLEXCOM0_USART_Wr  0x1015034           0x50          80   
-.text.SYS_TIME_DelayUS   0x1015084           0x50          80   
-.text.UART_InterruptHan  0x10150d4           0x4c          76   
-.text.DRV_G3_MACRT_Init  0x1015120           0x48          72   
-.text.usartReadEventHan  0x1015168           0x48          72   
-.text.DRV_PLC_BOOT_Star  0x10151b0           0x44          68   
-.text.DRV_PLC_HAL_Enabl  0x10151f4           0x44          68   
-.text.UART_Initialize    0x1015238           0x44          68   
-.text.SYS_INT_SourceDis  0x101527c           0x44          68   
-.text.APP_PLC_RxParamsI  0x10152c0           0x44          68   
-.text                    0x1015304           0x40          64  App's exec code 
-.rodata                  0x1015344           0x40          64  Read-only const 
-.text.DRV_PLC_HAL_Init   0x1015384           0x3c          60   
-.text.DRV_PLC_HAL_Setup  0x10153c0           0x3c          60   
-.text.FLEXCOM0_USART_In  0x10153fc           0x3c          60   
-.text.SUPC_Initialize    0x1015438           0x3c          60   
-.text.SYS_TIME_GetTimer  0x1015474           0x3c          60   
-.text.SYS_TIME_TimerDes  0x10154b0           0x3c          60   
-.rodata.APP_Tasks.str1.  0x10154ec           0x3c          60   
-.text.FLEXCOM5_SPI_Init  0x1015528           0x38          56   
-.text.PIOA_InterruptHan  0x1015560           0x38          56   
-.text.SYS_TIME_Resource  0x1015598           0x38          56   
-.text.DRV_PLC_HAL_SetTx  0x10155d0           0x34          52   
-.text.APP_PLC_PVDDMonit  0x1015604           0x34          52   
-.text.__pic32c_data_ini  0x1015638           0x34          52   
-.text.lDRV_PLC_BOOT_Rev  0x101566c           0x30          48   
-.text.ADC_Initialize     0x101569c           0x30          48   
-.text.SYS_TIME_UpdateTi  0x10156cc           0x30          48   
-.text._on_reset          0x10156fc           0x30          48   
-.text.APP_Initialize     0x101572c           0x30          48   
-.text                    0x101575c           0x30          48  App's exec code 
-.text.APP_PLC_DataIndCa  0x101578c           0x2c          44   
-.text.UART_Reset         0x10157b8           0x2c          44   
-.text.DRV_PLC_HAL_GetTh  0x10157e4           0x28          40   
-.text.setupDMA           0x101580c           0x28          40   
-.text.SYS_TIME_TimerPer  0x1015834           0x28          40   
-.text.main               0x101585c           0x28          40   
-.text.lDRV_PLC_BOOT_Che  0x1015884           0x24          36   
-.text.PIO_PortOutputEna  0x10158a8           0x24          36   
-.text.TC0_CH0_Interrupt  0x10158cc           0x24          36   
-.text.lADC_PVDDMONCallb  0x10158f0           0x24          36   
-.text.SYS_TIME_Resource  0x1015914           0x24          36   
-.text.DRV_PLC_HAL_Delay  0x1015938           0x22          34   
-.text.Dummy_App_Func     0x101595a            0x2           2   
-.text.ADC_InterruptHand  0x101595c           0x20          32   
-.text.RSTC_Initialize    0x101597c           0x20          32   
-.text.SEFC0_Initialize   0x101599c           0x20          32   
-.text.SEFC1_Initialize   0x10159bc           0x20          32   
-.text.TC0_CH0_TimerInit  0x10159dc           0x20          32   
-.text.SYS_INT_SourceRes  0x10159fc           0x20          32   
-.text.DRV_PLC_HAL_GetPi  0x1015a1c           0x1e          30   
-.text.__dinit_copy       0x1015a3a           0x1e          30   
-.text.DWDT_Initialize    0x1015a58           0x1c          28   
-.text.PIO_PortRead       0x1015a74           0x1c          28   
-.text.PIO_PortSet        0x1015a90           0x1c          28   
-.text.PIO_PortClear      0x1015aac           0x1c          28   
-.text.PIO_PortInterrupt  0x1015ac8           0x1c          28   
-.text.PIO_PortInterrupt  0x1015ae4           0x1c          28   
-.text.SEFC0_FlashPanelB  0x1015b00           0x1c          28   
-.text.SEFC1_FlashPanelB  0x1015b1c           0x1c          28   
-.rodata.sysTimePlibAPI   0x1015b38           0x1c          28   
-.text.memcpy             0x1015b54           0x1c          28   
-.text.DRV_G3_MACRT_Enab  0x1015b70           0x18          24   
-.rodata.plla_cfg         0x1015b88           0x18          24   
-.rodata.pllb_cfg         0x1015ba0           0x18          24   
-.text.UART_ReadNotifica  0x1015bb8           0x18          24   
-.text.SRV_PVDDMON_Callb  0x1015bd0           0x18          24   
-.text.SYS_TIME_DelayIsC  0x1015be8           0x18          24   
-.text.APP_PLC_DataCfmCa  0x1015c00           0x18          24   
-.text.resetUARTTimeout   0x1015c18           0x18          24   
-.text.CLK_DisableMainRC  0x1015c30           0x16          22   
-.text.__dummy            0x1015c46            0x2           2   
-.text.BSP_Initialize     0x1015c48           0x14          20   
-.text.DRV_G3_MACRT_Stat  0x1015c5c           0x14          20   
-.text.FLEXCOM5_SPI_IsTr  0x1015c70           0x14          20   
-.text.TRNG_ReadData      0x1015c84           0x14          20   
-.text.UART_WritePending  0x1015c98           0x14          20   
-.text.UART_ReadCountGet  0x1015cac           0x14          20   
-.text.SYS_Tasks          0x1015cc0           0x14          20   
-.rodata                  0x1015cd4           0x14          20  Read-only const 
-.text.memset             0x1015ce8           0x14          20   
-.text.NVIC_INT_Disable   0x1015cfc           0x12          18   
-.text.NVIC_INT_Restore   0x1015d0e           0x12          18   
-.text.__dinit_clear      0x1015d20           0x12          18   
-.rodata.PIO_INDEX        0x1015d34           0x10          16   
-.rodata.PIO_REGS         0x1015d44           0x10          16   
-.text.TRNG_Initialize    0x1015d54           0x10          16   
-.text.UART_WriteNotific  0x1015d64           0x10          16   
-.text.SRV_PVDDMON_Initi  0x1015d74           0x10          16   
-.text.APP_PLC_Exception  0x1015d84           0x10          16   
-.text.DRV_PLC_BOOT_Stat  0x1015d94            0xc          12   
-.text.DRV_G3_MACRT_Init  0x1015da0            0xc          12   
-.text.DRV_G3_MACRT_TxCf  0x1015dac            0xc          12   
-.text.DRV_G3_MACRT_Data  0x1015db8            0xc          12   
-.text.DRV_G3_MACRT_RxPa  0x1015dc4            0xc          12   
-.text.DRV_G3_MACRT_Exce  0x1015dd0            0xc          12   
-.text.ADC_ChannelsEnabl  0x1015ddc            0xc          12   
-.text.ADC_ChannelsDisab  0x1015de8            0xc          12   
-.text.ADC_ChannelsInter  0x1015df4            0xc          12   
-.text.ADC_ConversionSta  0x1015e00            0xc          12   
-.text.ADC_CallbackRegis  0x1015e0c            0xc          12   
-.text.TC0_CH0_TimerStar  0x1015e18            0xc          12   
-.text.TC0_CH0_TimerStop  0x1015e24            0xc          12   
-.text.TC0_CH0_TimerPeri  0x1015e30            0xc          12   
-.text.TC0_CH0_TimerComp  0x1015e3c            0xc          12   
-.text.TC0_CH0_TimerCoun  0x1015e48            0xc          12   
-.text.TC0_CH0_TimerCall  0x1015e54            0xc          12   
-.text.UART_ReadThreshol  0x1015e60            0xc          12   
-.text.UART_ReadCallback  0x1015e6c            0xc          12   
-.text.UART_WriteFreeBuf  0x1015e78            0xc          12   
-.rodata.main.str1.4      0x1015e84            0xc          12   
-.text.APP_PLC_Timer1_Ca  0x1015e90            0xc          12   
-.text.APP_PLC_Timer2_Ca  0x1015e9c            0xc          12   
-.text.APP_PLC_Timer3_Ca  0x1015ea8            0xc          12   
-.rodata.appTxPayload     0x1015eb4            0xc          12   
-.text.TC0_CH0_TimerFreq  0x1015ec0            0x8           8   
-.text.SYS_INT_Disable    0x1015ec8            0x8           8   
-.text.SYS_INT_Restore    0x1015ed0            0x8           8   
-.rodata.sysTimeInitData  0x1015ed8            0x8           8   
-.rodata.usartReadEventH  0x1015ee0            0x8           8   
-.text.SRV_PCOUP_Get_Def  0x1015ee8            0x4           4   
-.text.NonMaskableInt_Ha  0x1015eec            0x4           4   
-.text.HardFault_Handler  0x1015ef0            0x4           4   
-.text.DebugMonitor_Hand  0x1015ef4            0x4           4   
-.text.MemoryManagement_  0x1015ef8            0x4           4   
-.text.BusFault_Handler   0x1015efc            0x4           4   
-.text.UsageFault_Handle  0x1015f00            0x4           4   
-.text.Dummy_Handler      0x1015f04            0x4           4   
-.text.__dummy_decompres  0x1015f08            0x4           4   
-.text                    0x1015f0c            0x4           4  App's exec code 
-      Total ROM used  :     0x15f0e       89870  8.6% of 0x100000
+.text                    0x1012b0c          0x2bc         700  App's exec code 
+.text.DRV_G3_MACRT_Exte  0x1012dc8          0x280         640   
+.text.APP_Tasks          0x1013048          0x26c         620   
+.text.DRV_PLC_BOOT_Task  0x10132b4          0x1d8         472   
+.text.CLK_Initialize     0x101348c          0x194         404   
+.text.DRV_G3_MACRT_Task  0x1013620          0x13c         316   
+.rodata.srvPlcCoup       0x101375c          0x11c         284   
+.text.PIO_Initialize     0x1013878           0xfc         252   
+.text.DRV_PLC_HAL_SendW  0x1013974           0xf4         244   
+.text.FLEXCOM0_USART_Se  0x1013a68           0xe8         232   
+.text.SYS_TIME_PLIBCall  0x1013b50           0xd8         216   
+.text.SYS_TIME_Initiali  0x1013c28           0xcc         204   
+.text.APP_PLC_G3MACRTIn  0x1013cf4           0xb8         184   
+.text.FLEXCOM5_Interrup  0x1013dac           0xb4         180   
+.text.SYS_TIME_TimerObj  0x1013e60           0xb0         176   
+.text.FLEXCOM5_SPI_Writ  0x1013f10           0xac         172   
+.text.SYS_TIME_HwTimerC  0x1013fbc           0xa8         168   
+.text.Reset_Handler      0x1014064           0xa4         164   
+.text.lDRV_PLC_BOOT_Ena  0x1014108           0x9c         156   
+.text.DRV_PLC_HAL_SendB  0x10141a4           0x98         152   
+.text.UART_ISR_RX_Handl  0x101423c           0x94         148   
+.rodata.srvPlcCoupPredi  0x10142d0           0x90         144   
+.rodata.srvPlcCoupPredi  0x1014360           0x90         144   
+.text.SYS_TIME_AddToLis  0x10143f0           0x90         144   
+.text.DRV_G3_MACRT_PIBS  0x1014480           0x8c         140   
+.text.NVIC_Initialize    0x101450c           0x88         136   
+.text.PLLInitialize      0x1014594           0x84         132   
+.text.UART_Read          0x1014618           0x84         132   
+.text.DRV_G3_MACRT_TxRe  0x101469c           0x7c         124   
+.text.UART_ISR_TX_Handl  0x1014718           0x7c         124   
+.text.SYS_Initialize     0x1014794           0x78         120   
+.text.SRV_PVDDMON_Resta  0x101480c           0x74         116   
+.text.DRV_PLC_BOOT_Rest  0x1014880           0x6c         108   
+.text.PIO_PinInterruptC  0x10148ec           0x6c         108   
+.text.lDRV_G3_MACRT_COM  0x1014958           0x68         104   
+.text.SRV_PVDDMON_Start  0x10149c0           0x68         104   
+.text.DRV_PLC_HAL_Reset  0x1014a28           0x64         100   
+.text.DRV_PLC_HAL_SetSt  0x1014a8c           0x64         100   
+.text.DRV_G3_MACRT_Init  0x1014af0           0x64         100   
+.text.lDRV_G3_MACRT_COM  0x1014b54           0x64         100   
+.text.DRV_G3_MACRT_Task  0x1014bb8           0x5c          92   
+.text.FLEXCOM5_SPI_Tran  0x1014c14           0x5c          92   
+.text.SYS_TIME_RemoveFr  0x1014c70           0x5c          92   
+.text.__libc_start_init  0x1014ccc           0x5c          92   
+.text.lDRV_PLC_BOOT_Get  0x1014d28           0x58          88   
+.text.DRV_G3_MACRT_Open  0x1014d80           0x58          88   
+.text.RSTC_PMCResetStat  0x1014dd8           0x58          88   
+.text.SYS_TIME_TimerAdd  0x1014e30           0x58          88   
+.text.SYS_TIME_TimerSta  0x1014e88           0x58          88   
+.text.SYS_TIME_Callback  0x1014ee0           0x54          84   
+.text.lDRV_PLC_BOOT_Dis  0x1014f34           0x50          80   
+.text.lDRV_G3_MACRT_COM  0x1014f84           0x50          80   
+.text.FLEXCOM0_USART_Wr  0x1014fd4           0x50          80   
+.text.SYS_TIME_DelayUS   0x1015024           0x50          80   
+.text.UART_InterruptHan  0x1015074           0x4c          76   
+.text.DRV_G3_MACRT_Init  0x10150c0           0x48          72   
+.text.DRV_PLC_BOOT_Star  0x1015108           0x44          68   
+.text.DRV_PLC_HAL_Enabl  0x101514c           0x44          68   
+.text.UART_Initialize    0x1015190           0x44          68   
+.text.SYS_INT_SourceDis  0x10151d4           0x44          68   
+.text.APP_PLC_RxParamsI  0x1015218           0x44          68   
+.text                    0x101525c           0x40          64  App's exec code 
+.rodata                  0x101529c           0x40          64  Read-only const 
+.text.DRV_PLC_HAL_Init   0x10152dc           0x3c          60   
+.text.DRV_PLC_HAL_Setup  0x1015318           0x3c          60   
+.text.FLEXCOM0_USART_In  0x1015354           0x3c          60   
+.text.SUPC_Initialize    0x1015390           0x3c          60   
+.text.SYS_TIME_GetTimer  0x10153cc           0x3c          60   
+.text.SYS_TIME_TimerDes  0x1015408           0x3c          60   
+.text.FLEXCOM5_SPI_Init  0x1015444           0x38          56   
+.text.PIOA_InterruptHan  0x101547c           0x38          56   
+.text.SYS_TIME_Resource  0x10154b4           0x38          56   
+.text.DRV_PLC_HAL_SetTx  0x10154ec           0x34          52   
+.text.usartReadEventHan  0x1015520           0x34          52   
+.text.APP_PLC_PVDDMonit  0x1015554           0x34          52   
+.text.__pic32c_data_ini  0x1015588           0x34          52   
+.text.lDRV_PLC_BOOT_Rev  0x10155bc           0x30          48   
+.text.ADC_Initialize     0x10155ec           0x30          48   
+.text.SYS_TIME_UpdateTi  0x101561c           0x30          48   
+.text._on_reset          0x101564c           0x30          48   
+.text.APP_Initialize     0x101567c           0x30          48   
+.text                    0x10156ac           0x30          48  App's exec code 
+.text.APP_PLC_DataIndCa  0x10156dc           0x2c          44   
+.text.UART_Reset         0x1015708           0x2c          44   
+.text.DRV_PLC_HAL_GetTh  0x1015734           0x28          40   
+.text.setupDMA           0x101575c           0x28          40   
+.text.SYS_TIME_TimerPer  0x1015784           0x28          40   
+.text.lDRV_PLC_BOOT_Che  0x10157ac           0x24          36   
+.text.PIO_PortOutputEna  0x10157d0           0x24          36   
+.text.TC0_CH0_Interrupt  0x10157f4           0x24          36   
+.text.lADC_PVDDMONCallb  0x1015818           0x24          36   
+.text.SYS_TIME_Resource  0x101583c           0x24          36   
+.text.DRV_PLC_HAL_Delay  0x1015860           0x22          34   
+.text.Dummy_App_Func     0x1015882            0x2           2   
+.text.ADC_InterruptHand  0x1015884           0x20          32   
+.text.RSTC_Initialize    0x10158a4           0x20          32   
+.text.SEFC0_Initialize   0x10158c4           0x20          32   
+.text.SEFC1_Initialize   0x10158e4           0x20          32   
+.text.TC0_CH0_TimerInit  0x1015904           0x20          32   
+.text.SYS_INT_SourceRes  0x1015924           0x20          32   
+.text.DRV_PLC_HAL_GetPi  0x1015944           0x1e          30   
+.text.__dinit_copy       0x1015962           0x1e          30   
+.text.DWDT_Initialize    0x1015980           0x1c          28   
+.text.PIO_PortRead       0x101599c           0x1c          28   
+.text.PIO_PortSet        0x10159b8           0x1c          28   
+.text.PIO_PortClear      0x10159d4           0x1c          28   
+.text.PIO_PortInterrupt  0x10159f0           0x1c          28   
+.text.PIO_PortInterrupt  0x1015a0c           0x1c          28   
+.text.SEFC0_FlashPanelB  0x1015a28           0x1c          28   
+.text.SEFC1_FlashPanelB  0x1015a44           0x1c          28   
+.rodata.sysTimePlibAPI   0x1015a60           0x1c          28   
+.text.main               0x1015a7c           0x1c          28   
+.text.memcpy             0x1015a98           0x1c          28   
+.text.DRV_G3_MACRT_Enab  0x1015ab4           0x18          24   
+.rodata.plla_cfg         0x1015acc           0x18          24   
+.rodata.pllb_cfg         0x1015ae4           0x18          24   
+.text.UART_ReadNotifica  0x1015afc           0x18          24   
+.text.SRV_PVDDMON_Callb  0x1015b14           0x18          24   
+.text.SYS_TIME_DelayIsC  0x1015b2c           0x18          24   
+.text.APP_PLC_DataCfmCa  0x1015b44           0x18          24   
+.text.resetUARTTimeout   0x1015b5c           0x18          24   
+.text.CLK_DisableMainRC  0x1015b74           0x16          22   
+.text.__dummy            0x1015b8a            0x2           2   
+.text.BSP_Initialize     0x1015b8c           0x14          20   
+.text.DRV_G3_MACRT_Stat  0x1015ba0           0x14          20   
+.text.FLEXCOM5_SPI_IsTr  0x1015bb4           0x14          20   
+.text.TRNG_ReadData      0x1015bc8           0x14          20   
+.text.UART_WritePending  0x1015bdc           0x14          20   
+.text.UART_ReadCountGet  0x1015bf0           0x14          20   
+.text.SYS_Tasks          0x1015c04           0x14          20   
+.rodata                  0x1015c18           0x14          20  Read-only const 
+.text.memset             0x1015c2c           0x14          20   
+.text.NVIC_INT_Disable   0x1015c40           0x12          18   
+.text.NVIC_INT_Restore   0x1015c52           0x12          18   
+.text.__dinit_clear      0x1015c64           0x12          18   
+.rodata.PIO_INDEX        0x1015c78           0x10          16   
+.rodata.PIO_REGS         0x1015c88           0x10          16   
+.text.TRNG_Initialize    0x1015c98           0x10          16   
+.text.UART_WriteNotific  0x1015ca8           0x10          16   
+.text.SRV_PVDDMON_Initi  0x1015cb8           0x10          16   
+.text.APP_PLC_Exception  0x1015cc8           0x10          16   
+.rodata.APP_Tasks.str1.  0x1015cd8           0x10          16   
+.text.DRV_PLC_BOOT_Stat  0x1015ce8            0xc          12   
+.text.DRV_G3_MACRT_Init  0x1015cf4            0xc          12   
+.text.DRV_G3_MACRT_TxCf  0x1015d00            0xc          12   
+.text.DRV_G3_MACRT_Data  0x1015d0c            0xc          12   
+.text.DRV_G3_MACRT_RxPa  0x1015d18            0xc          12   
+.text.DRV_G3_MACRT_Exce  0x1015d24            0xc          12   
+.text.ADC_ChannelsEnabl  0x1015d30            0xc          12   
+.text.ADC_ChannelsDisab  0x1015d3c            0xc          12   
+.text.ADC_ChannelsInter  0x1015d48            0xc          12   
+.text.ADC_ConversionSta  0x1015d54            0xc          12   
+.text.ADC_CallbackRegis  0x1015d60            0xc          12   
+.text.TC0_CH0_TimerStar  0x1015d6c            0xc          12   
+.text.TC0_CH0_TimerStop  0x1015d78            0xc          12   
+.text.TC0_CH0_TimerPeri  0x1015d84            0xc          12   
+.text.TC0_CH0_TimerComp  0x1015d90            0xc          12   
+.text.TC0_CH0_TimerCoun  0x1015d9c            0xc          12   
+.text.TC0_CH0_TimerCall  0x1015da8            0xc          12   
+.text.UART_ReadThreshol  0x1015db4            0xc          12   
+.text.UART_ReadCallback  0x1015dc0            0xc          12   
+.text.UART_WriteFreeBuf  0x1015dcc            0xc          12   
+.text.APP_PLC_Timer1_Ca  0x1015dd8            0xc          12   
+.text.APP_PLC_Timer2_Ca  0x1015de4            0xc          12   
+.text.APP_PLC_Timer3_Ca  0x1015df0            0xc          12   
+.text.TC0_CH0_TimerFreq  0x1015dfc            0x8           8   
+.text.SYS_INT_Disable    0x1015e04            0x8           8   
+.text.SYS_INT_Restore    0x1015e0c            0x8           8   
+.rodata.sysTimeInitData  0x1015e14            0x8           8   
+.text.SRV_PCOUP_Get_Def  0x1015e1c            0x4           4   
+.text.NonMaskableInt_Ha  0x1015e20            0x4           4   
+.text.HardFault_Handler  0x1015e24            0x4           4   
+.text.DebugMonitor_Hand  0x1015e28            0x4           4   
+.text.MemoryManagement_  0x1015e2c            0x4           4   
+.text.BusFault_Handler   0x1015e30            0x4           4   
+.text.UsageFault_Handle  0x1015e34            0x4           4   
+.text.Dummy_Handler      0x1015e38            0x4           4   
+.text.__dummy_decompres  0x1015e3c            0x4           4   
+.text                    0x1015e40            0x4           4  App's exec code 
+      Total ROM used  :     0x15e42       89666  8.6% of 0x100000
         --------------------------------------------------------------------------
-         Total Program Memory used  :     0x15f0e       89870  8.6% of 0x100000
+         Total Program Memory used  :     0x15e42       89666  8.6% of 0x100000
         --------------------------------------------------------------------------
 
 
@@ -261,22 +258,23 @@ section                    address  length [bytes]      (dec)  Description
 .bss.SEFC1_PanelBaseAdd 0x20001538            0x4           4   
 .bss.ADC_CompareCallbac 0x2000153c            0x4           4   
 .bss.nBytesRead         0x20001540            0x4           4   
-.bss                    0x20001544            0x4           4  Uninitialized data 
+.bss.pReceivedChar      0x20001544            0x4           4   
 .bss                    0x20001548            0x4           4  Uninitialized data 
-.bss.spreadRestoreStatu 0x2000154c            0x3           3   
-.bss.srv_pvddmon_mode   0x2000154f            0x1           1   
-.bss.timeout_occurred   0x20001550            0x1           1   
-.data.gSysTimeTokenCoun 0x20001552            0x2           2   
-.ramfunc.SEFC0_GpnvmBit 0x20001554           0x40          64   
-.data.drvPLCHalAPI      0x20001594           0x30          48   
-.data.drvPLCPlib        0x200015c4           0x18          24   
-.data.drvG3MacRtInitDat 0x200015dc           0x14          20   
-.data.setup             0x200015f0           0x10          16   
-.data.portNumCb         0x20001600            0x8           8   
-.data.length_msg_pot    0x20001608            0x2           2   
-         Total RAM used  :      0x1609        5641  1.1% of 0x80000
+.bss                    0x2000154c            0x4           4  Uninitialized data 
+.bss.spreadRestoreStatu 0x20001550            0x3           3   
+.bss.srv_pvddmon_mode   0x20001553            0x1           1   
+.bss.timeout_occurred   0x20001554            0x1           1   
+.data.gSysTimeTokenCoun 0x20001556            0x2           2   
+.ramfunc.SEFC0_GpnvmBit 0x20001558           0x40          64   
+.data.drvPLCHalAPI      0x20001598           0x30          48   
+.data.drvPLCPlib        0x200015c8           0x18          24   
+.data.drvG3MacRtInitDat 0x200015e0           0x14          20   
+.data.setup             0x200015f4           0x10          16   
+.data.portNumCb         0x20001604            0x8           8   
+.data.length_msg_pot    0x2000160c            0x2           2   
+         Total RAM used  :      0x160d        5645  1.1% of 0x80000
         --------------------------------------------------------------------------
-            Total Data Memory used  :      0x1609        5641  1.1% of 0x80000
+            Total Data Memory used  :      0x160d        5645  1.1% of 0x80000
         --------------------------------------------------------------------------
 
 
@@ -294,7 +292,7 @@ Microchip PIC32 Memory-Usage Report By Module
 --------------------------------------------------------------------------------
        74496           0           0       74496       12300    drv_g3_macrt_bin.o        build/pic32cxmtg/debug/_ext/2087500840/drv_g3_macrt_bin.o
         1576           0        1548        3124         c34    drv_g3_macrt_local_comm.o build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
-        1408           2        1201        2611         a33    app.o                     build/pic32cxmtg/debug/_ext/1360937237/app.o
+        1228           2        1205        2435         983    app.o                     build/pic32cxmtg/debug/_ext/1360937237/app.o
          940           0        1276        2216         8a8    drv_plc_hal.o             build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
         1664           2         224        1890         762    sys_time.o                build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
         1388           0           0        1388         56c    srv_pcoup.o               build/pic32cxmtg/debug/_ext/1540903485/srv_pcoup.o
@@ -322,9 +320,9 @@ Microchip PIC32 Memory-Usage Report By Module
           94           0           0          94          5e    __libc_start_main.o       libg-musl.a
           76           0           4          80          50    data_init.o               libpic32c.a
            0           0          80          80          50    libc.o                    libg-musl.a
-          52          16           0          68          44    main.o                    build/pic32cxmtg/debug/_ext/1360937237/main.o
           60           0           0          60          3c    plib_supc.o               build/pic32cxmtg/debug/_ext/1051592658/plib_supc.o
           48           0           0          48          30    _aeabi_uldivmod.o         libgcc.a
+          28          16           0          44          2c    main.o                    build/pic32cxmtg/debug/_ext/1360937237/main.o
           36           0           0          36          24    plib_trng.o               build/pic32cxmtg/debug/_ext/1051565808/plib_trng.o
           30           0           0          30          1e    pic32_data_init_copy.o    libpic32c.a
           28           0           0          28          1c    memcpy.o                  libc-size-musl.a
@@ -339,7 +337,7 @@ Microchip PIC32 Memory-Usage Report By Module
            4           0           0           4           4    _dvmd_tls.o               libgcc.a
            0           0           4           4           4    __environ.o               libg-musl.a
 --------------------------------------------------------------------------------
-       89938         120        5457       95515       1751b    dist/pic32cxmtg/debug/pic32cxmtg_ek.X.debug.elf
+       89734         120        5461       95315       17453    dist/pic32cxmtg/debug/pic32cxmtg_ek.X.debug.elf
 
 
 Discarded input sections
@@ -1260,7 +1258,7 @@ LOAD stack
  .comment       0x000000000000002b       0x2c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
  .comment       0x000000000000002b       0x2c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_info     0x0000000000000000    0x17733
+.debug_info     0x0000000000000000    0x175ad
  .debug_info    0x0000000000000000      0x468 build/pic32cxmtg/debug/_ext/1785439515/bsp.o
  .debug_info    0x0000000000000468     0x114c build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
  .debug_info    0x00000000000015b4     0x1900 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
@@ -1289,19 +1287,19 @@ LOAD stack
  .debug_info    0x0000000000013a7d      0x585 build/pic32cxmtg/debug/_ext/1545560501/startup_xc32.o
  .debug_info    0x0000000000014002      0x116 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
  .debug_info    0x0000000000014118      0x8bc build/pic32cxmtg/debug/_ext/1545560501/interrupts.o
- .debug_info    0x00000000000149d4      0x3d1 build/pic32cxmtg/debug/_ext/1360937237/main.o
- .debug_info    0x0000000000014da5     0x1b8f build/pic32cxmtg/debug/_ext/1360937237/app.o
- .debug_info    0x0000000000016934       0x54 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
- .debug_info    0x0000000000016988       0xf3 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
- .debug_info    0x0000000000016a7b       0xbb c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
- .debug_info    0x0000000000016b36      0x2fb c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
- .debug_info    0x0000000000016e31      0x276 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
- .debug_info    0x00000000000170a7       0x97 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
- .debug_info    0x000000000001713e       0x26 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_info    0x0000000000017164      0x52a c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
- .debug_info    0x000000000001768e       0x26 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
- .debug_info    0x00000000000176b4       0x3f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
- .debug_info    0x00000000000176f3       0x40 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .debug_info    0x00000000000149d4      0x3a7 build/pic32cxmtg/debug/_ext/1360937237/main.o
+ .debug_info    0x0000000000014d7b     0x1a33 build/pic32cxmtg/debug/_ext/1360937237/app.o
+ .debug_info    0x00000000000167ae       0x54 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_info    0x0000000000016802       0xf3 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_info    0x00000000000168f5       0xbb c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_info    0x00000000000169b0      0x2fb c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_info    0x0000000000016cab      0x276 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .debug_info    0x0000000000016f21       0x97 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .debug_info    0x0000000000016fb8       0x26 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x0000000000016fde      0x52a c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_info    0x0000000000017508       0x26 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000000000001752e       0x3f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_info    0x000000000001756d       0x40 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
 .debug_abbrev   0x0000000000000000     0x4c5f
  .debug_abbrev  0x0000000000000000       0xbc build/pic32cxmtg/debug/_ext/1785439515/bsp.o
@@ -1469,7 +1467,7 @@ LOAD stack
  .debug_ranges  0x0000000000001020       0x10 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
  .debug_ranges  0x0000000000001030       0x10 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_line     0x0000000000000000     0xa586
+.debug_line     0x0000000000000000     0xa580
  .debug_line    0x0000000000000000       0xe0 build/pic32cxmtg/debug/_ext/1785439515/bsp.o
  .debug_line    0x00000000000000e0      0x6bb build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
  .debug_line    0x000000000000079b      0x950 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
@@ -1498,21 +1496,21 @@ LOAD stack
  .debug_line    0x0000000000008ae3      0x26b build/pic32cxmtg/debug/_ext/1545560501/startup_xc32.o
  .debug_line    0x0000000000008d4e       0xd0 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
  .debug_line    0x0000000000008e1e      0x14c build/pic32cxmtg/debug/_ext/1545560501/interrupts.o
- .debug_line    0x0000000000008f6a      0x1b6 build/pic32cxmtg/debug/_ext/1360937237/main.o
- .debug_line    0x0000000000009120      0x913 build/pic32cxmtg/debug/_ext/1360937237/app.o
- .debug_line    0x0000000000009a33       0x92 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
- .debug_line    0x0000000000009ac5       0xf9 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
- .debug_line    0x0000000000009bbe       0xe3 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
- .debug_line    0x0000000000009ca1      0x1c7 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
- .debug_line    0x0000000000009e68       0xb5 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
- .debug_line    0x0000000000009f1d       0xfb c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
- .debug_line    0x000000000000a018       0x91 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_line    0x000000000000a0a9      0x360 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
- .debug_line    0x000000000000a409       0x91 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
- .debug_line    0x000000000000a49a       0x72 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
- .debug_line    0x000000000000a50c       0x7a c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .debug_line    0x0000000000008f6a      0x1b5 build/pic32cxmtg/debug/_ext/1360937237/main.o
+ .debug_line    0x000000000000911f      0x90e build/pic32cxmtg/debug/_ext/1360937237/app.o
+ .debug_line    0x0000000000009a2d       0x92 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_line    0x0000000000009abf       0xf9 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_line    0x0000000000009bb8       0xe3 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_line    0x0000000000009c9b      0x1c7 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_line    0x0000000000009e62       0xb5 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .debug_line    0x0000000000009f17       0xfb c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .debug_line    0x000000000000a012       0x91 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x000000000000a0a3      0x360 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_line    0x000000000000a403       0x91 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .debug_line    0x000000000000a494       0x72 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_line    0x000000000000a506       0x7a c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_str      0x0000000000000000    0x18981
+.debug_str      0x0000000000000000    0x1895f
  .debug_str     0x0000000000000000      0x492 build/pic32cxmtg/debug/_ext/1785439515/bsp.o
  .debug_str     0x0000000000000492     0x14fe build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
  .debug_str     0x0000000000001990     0x18dd build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
@@ -1541,19 +1539,19 @@ LOAD stack
  .debug_str     0x0000000000013606      0x48d build/pic32cxmtg/debug/_ext/1545560501/startup_xc32.o
  .debug_str     0x0000000000013a93      0x34b build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
  .debug_str     0x0000000000013dde      0xda9 build/pic32cxmtg/debug/_ext/1545560501/interrupts.o
- .debug_str     0x0000000000014b87      0x7f6 build/pic32cxmtg/debug/_ext/1360937237/main.o
- .debug_str     0x000000000001537d     0x1e3a build/pic32cxmtg/debug/_ext/1360937237/app.o
- .debug_str     0x00000000000171b7      0x1f5 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
- .debug_str     0x00000000000173ac      0x22f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
- .debug_str     0x00000000000175db      0x21b c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
- .debug_str     0x00000000000177f6      0x3d4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
- .debug_str     0x0000000000017bca      0x33f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
- .debug_str     0x0000000000017f09      0x23f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
- .debug_str     0x0000000000018148       0xd6 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_str     0x000000000001821e      0x2cd c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
- .debug_str     0x00000000000184eb       0xda c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
- .debug_str     0x00000000000185c5      0x1df c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
- .debug_str     0x00000000000187a4      0x1dd c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .debug_str     0x0000000000014b87      0x7e1 build/pic32cxmtg/debug/_ext/1360937237/main.o
+ .debug_str     0x0000000000015368     0x1e2d build/pic32cxmtg/debug/_ext/1360937237/app.o
+ .debug_str     0x0000000000017195      0x1f5 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_str     0x000000000001738a      0x22f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+ .debug_str     0x00000000000175b9      0x21b c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+ .debug_str     0x00000000000177d4      0x3d4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+ .debug_str     0x0000000000017ba8      0x33f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(libc.o)
+ .debug_str     0x0000000000017ee7      0x23f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+ .debug_str     0x0000000000018126       0xd6 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x00000000000181fc      0x2cd c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_str     0x00000000000184c9       0xda c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .debug_str     0x00000000000185a3      0x1df c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_str     0x0000000000018782      0x1dd c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
 .debug_frame    0x0000000000000000     0x1e08
  .debug_frame   0x0000000000000000       0x20 build/pic32cxmtg/debug/_ext/1785439515/bsp.o
@@ -1815,734 +1813,734 @@ LOAD stack
  .bss.nBytesRead
                 0x0000000020001540        0x4 build/pic32cxmtg/debug/_ext/1360937237/app.o
 
-.bss%36         0x0000000020001544        0x4
- .bss           0x0000000020001544        0x4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+.bss.pReceivedChar%36
+                0x0000000020001544        0x4
+ .bss.pReceivedChar
+                0x0000000020001544        0x4 build/pic32cxmtg/debug/_ext/1360937237/app.o
 
 .bss%37         0x0000000020001548        0x4
- .bss           0x0000000020001548        0x4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
-                0x0000000020001548                __environ
-                0x0000000020001548                environ
-                0x0000000020001548                ___environ
-                0x0000000020001548                _environ
+ .bss           0x0000000020001548        0x4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
 
-.bss.spreadRestoreStatus%38
-                0x000000002000154c        0x3
+.bss%38         0x000000002000154c        0x4
+ .bss           0x000000002000154c        0x4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__environ.o)
+                0x000000002000154c                __environ
+                0x000000002000154c                environ
+                0x000000002000154c                ___environ
+                0x000000002000154c                _environ
+
+.bss.spreadRestoreStatus%39
+                0x0000000020001550        0x3
  .bss.spreadRestoreStatus
-                0x000000002000154c        0x3 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
+                0x0000000020001550        0x3 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
 
-.bss.srv_pvddmon_mode%39
-                0x000000002000154f        0x1
+.bss.srv_pvddmon_mode%40
+                0x0000000020001553        0x1
  .bss.srv_pvddmon_mode
-                0x000000002000154f        0x1 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
+                0x0000000020001553        0x1 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
 
-.bss.timeout_occurred%40
-                0x0000000020001550        0x1
+.bss.timeout_occurred%41
+                0x0000000020001554        0x1
  .bss.timeout_occurred
-                0x0000000020001550        0x1 build/pic32cxmtg/debug/_ext/1360937237/app.o
-                0x0000000020001550                timeout_occurred
+                0x0000000020001554        0x1 build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000020001554                timeout_occurred
 
-.ramfunc.SEFC0_GpnvmBitRead%41
-                0x0000000020001554       0x40
+.ramfunc.SEFC0_GpnvmBitRead%42
+                0x0000000020001558       0x40
  .ramfunc.SEFC0_GpnvmBitRead
-                0x0000000020001554       0x20 build/pic32cxmtg/debug/_ext/1051608344/plib_sefc0.o
-                0x0000000020001554                SEFC0_GpnvmBitRead
+                0x0000000020001558       0x20 build/pic32cxmtg/debug/_ext/1051608344/plib_sefc0.o
+                0x0000000020001558                SEFC0_GpnvmBitRead
  .ramfunc.SEFC1_GpnvmBitRead
-                0x0000000020001574       0x20 build/pic32cxmtg/debug/_ext/1051608344/plib_sefc1.o
-                0x0000000020001574                SEFC1_GpnvmBitRead
+                0x0000000020001578       0x20 build/pic32cxmtg/debug/_ext/1051608344/plib_sefc1.o
+                0x0000000020001578                SEFC1_GpnvmBitRead
 
-.data.drvPLCHalAPI%42
-                0x0000000020001594       0x30
+.data.drvPLCHalAPI%43
+                0x0000000020001598       0x30
  .data.drvPLCHalAPI
-                0x0000000020001594       0x30 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
+                0x0000000020001598       0x30 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
 
-.data.drvPLCPlib%43
-                0x00000000200015c4       0x18
+.data.drvPLCPlib%44
+                0x00000000200015c8       0x18
  .data.drvPLCPlib
-                0x00000000200015c4       0x18 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
+                0x00000000200015c8       0x18 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
 
-.data.drvG3MacRtInitData%44
-                0x00000000200015dc       0x14
+.data.drvG3MacRtInitData%45
+                0x00000000200015e0       0x14
  .data.drvG3MacRtInitData
-                0x00000000200015dc       0x14 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
-                0x00000000200015dc                drvG3MacRtInitData
+                0x00000000200015e0       0x14 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
+                0x00000000200015e0                drvG3MacRtInitData
 
-.data.setup%45  0x00000000200015f0       0x10
- .data.setup    0x00000000200015f0       0x10 build/pic32cxmtg/debug/_ext/1360937237/main.o
-                0x00000000200015f0                setup
+.data.setup%46  0x00000000200015f4       0x10
+ .data.setup    0x00000000200015f4       0x10 build/pic32cxmtg/debug/_ext/1360937237/main.o
+                0x00000000200015f4                setup
 
-.data.portNumCb%46
-                0x0000000020001600        0x8
+.data.portNumCb%47
+                0x0000000020001604        0x8
  .data.portNumCb
-                0x0000000020001600        0x8 build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x0000000020001604        0x8 build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
 
-.data.gSysTimeTokenCount%47
-                0x0000000020001552        0x2
+.data.gSysTimeTokenCount%48
+                0x0000000020001556        0x2
  .data.gSysTimeTokenCount
-                0x0000000020001552        0x2 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000020001556        0x2 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
-.data.length_msg_pot%48
-                0x0000000020001608        0x2
+.data.length_msg_pot%49
+                0x000000002000160c        0x2
  .data.length_msg_pot
-                0x0000000020001608        0x2 build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x000000002000160c        0x2 build/pic32cxmtg/debug/_ext/1360937237/app.o
 
 .eh_frame%z1    0x0000000000000000        0x0
  .eh_frame      0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.config_D0000000.__config_D0000000%49
+.config_D0000000.__config_D0000000%50
                 0x00000000d0000000        0x4
  .config_D0000000.__config_D0000000
                 0x00000000d0000000        0x4 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
                 0x00000000d0000000                __config_D0000000
 
-.rodata%50      0x0000000001000200    0x12300
+.rodata%51      0x0000000001000200    0x12300
  .rodata        0x0000000001000200    0x12300 build/pic32cxmtg/debug/_ext/2087500840/drv_g3_macrt_bin.o
                 0x0000000001000200                g3_mac_rt_bin_start
                 0x0000000001012500                g3_mac_rt_bin2_start
                 0x0000000001012500                g3_mac_rt_bin2_end
                 0x0000000001012500                g3_mac_rt_bin_end
 
-.text.SRV_PCOUP_Set_Config%51
+.text.SRV_PCOUP_Set_Config%52
                 0x0000000001012500      0x32c
  .text.SRV_PCOUP_Set_Config
                 0x0000000001012500      0x32c build/pic32cxmtg/debug/_ext/1540903485/srv_pcoup.o
                 0x0000000001012500                SRV_PCOUP_Set_Config
 
-.dinit%52       0x000000000101282c      0x2e0
+.dinit%53       0x000000000101282c      0x2e0
  .dinit         0x000000000101282c      0x2e0 data_init
 
-.text.APP_Tasks%53
-                0x0000000001012b0c      0x2cc
- .text.APP_Tasks
-                0x0000000001012b0c      0x2cc build/pic32cxmtg/debug/_ext/1360937237/app.o
-                0x0000000001012b0c                APP_Tasks
-
-.text%54        0x0000000001012dd8      0x2bc
- .text          0x0000000001012dd8      0x2bc c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x0000000001012dd8                __udivmoddi4
+.text%54        0x0000000001012b0c      0x2bc
+ .text          0x0000000001012b0c      0x2bc c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x0000000001012b0c                __udivmoddi4
 
 .text.DRV_G3_MACRT_ExternalInterruptHandler%55
-                0x0000000001013094      0x280
+                0x0000000001012dc8      0x280
  .text.DRV_G3_MACRT_ExternalInterruptHandler
-                0x0000000001013094      0x280 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
-                0x0000000001013094                DRV_G3_MACRT_ExternalInterruptHandler
+                0x0000000001012dc8      0x280 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
+                0x0000000001012dc8                DRV_G3_MACRT_ExternalInterruptHandler
 
-.text.DRV_PLC_BOOT_Tasks%56
-                0x0000000001013314      0x1d8
+.text.APP_Tasks%56
+                0x0000000001013048      0x26c
+ .text.APP_Tasks
+                0x0000000001013048      0x26c build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001013048                APP_Tasks
+
+.text.DRV_PLC_BOOT_Tasks%57
+                0x00000000010132b4      0x1d8
  .text.DRV_PLC_BOOT_Tasks
-                0x0000000001013314      0x1d8 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
-                0x0000000001013314                DRV_PLC_BOOT_Tasks
+                0x00000000010132b4      0x1d8 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
+                0x00000000010132b4                DRV_PLC_BOOT_Tasks
 
-.text.CLK_Initialize%57
-                0x00000000010134ec      0x194
+.text.CLK_Initialize%58
+                0x000000000101348c      0x194
  .text.CLK_Initialize
-                0x00000000010134ec      0x194 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
-                0x00000000010134ec                CLK_Initialize
+                0x000000000101348c      0x194 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
+                0x000000000101348c                CLK_Initialize
 
-.text.DRV_G3_MACRT_Task%58
-                0x0000000001013680      0x13c
+.text.DRV_G3_MACRT_Task%59
+                0x0000000001013620      0x13c
  .text.DRV_G3_MACRT_Task
-                0x0000000001013680      0x13c build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
-                0x0000000001013680                DRV_G3_MACRT_Task
+                0x0000000001013620      0x13c build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
+                0x0000000001013620                DRV_G3_MACRT_Task
 
-.rodata.srvPlcCoup%59
-                0x00000000010137bc      0x11c
+.rodata.srvPlcCoup%60
+                0x000000000101375c      0x11c
  .rodata.srvPlcCoup
-                0x00000000010137bc      0x11c build/pic32cxmtg/debug/_ext/1540903485/srv_pcoup.o
+                0x000000000101375c      0x11c build/pic32cxmtg/debug/_ext/1540903485/srv_pcoup.o
 
-.text.PIO_Initialize%60
-                0x00000000010138d8       0xfc
+.text.PIO_Initialize%61
+                0x0000000001013878       0xfc
  .text.PIO_Initialize
-                0x00000000010138d8       0xfc build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
-                0x00000000010138d8                PIO_Initialize
+                0x0000000001013878       0xfc build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x0000000001013878                PIO_Initialize
 
-.text.DRV_PLC_HAL_SendWrRdCmd%61
-                0x00000000010139d4       0xf4
+.text.DRV_PLC_HAL_SendWrRdCmd%62
+                0x0000000001013974       0xf4
  .text.DRV_PLC_HAL_SendWrRdCmd
-                0x00000000010139d4       0xf4 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x00000000010139d4                DRV_PLC_HAL_SendWrRdCmd
+                0x0000000001013974       0xf4 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x0000000001013974                DRV_PLC_HAL_SendWrRdCmd
 
-.text.FLEXCOM0_USART_SerialSetup%62
-                0x0000000001013ac8       0xe8
+.text.FLEXCOM0_USART_SerialSetup%63
+                0x0000000001013a68       0xe8
  .text.FLEXCOM0_USART_SerialSetup
-                0x0000000001013ac8       0xe8 build/pic32cxmtg/debug/_ext/1260474139/plib_flexcom0_usart.o
-                0x0000000001013ac8                FLEXCOM0_USART_SerialSetup
+                0x0000000001013a68       0xe8 build/pic32cxmtg/debug/_ext/1260474139/plib_flexcom0_usart.o
+                0x0000000001013a68                FLEXCOM0_USART_SerialSetup
 
-.text.SYS_TIME_PLIBCallback%63
-                0x0000000001013bb0       0xd8
+.text.SYS_TIME_PLIBCallback%64
+                0x0000000001013b50       0xd8
  .text.SYS_TIME_PLIBCallback
-                0x0000000001013bb0       0xd8 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001013b50       0xd8 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
-.text.SYS_TIME_Initialize%64
-                0x0000000001013c88       0xcc
+.text.SYS_TIME_Initialize%65
+                0x0000000001013c28       0xcc
  .text.SYS_TIME_Initialize
-                0x0000000001013c88       0xcc build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
-                0x0000000001013c88                SYS_TIME_Initialize
+                0x0000000001013c28       0xcc build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001013c28                SYS_TIME_Initialize
 
-.text.APP_PLC_G3MACRTInitCallback%65
-                0x0000000001013d54       0xb8
+.text.APP_PLC_G3MACRTInitCallback%66
+                0x0000000001013cf4       0xb8
  .text.APP_PLC_G3MACRTInitCallback
-                0x0000000001013d54       0xb8 build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001013cf4       0xb8 build/pic32cxmtg/debug/_ext/1360937237/app.o
 
-.text.FLEXCOM5_InterruptHandler%66
-                0x0000000001013e0c       0xb4
+.text.FLEXCOM5_InterruptHandler%67
+                0x0000000001013dac       0xb4
  .text.FLEXCOM5_InterruptHandler
-                0x0000000001013e0c       0xb4 build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
-                0x0000000001013e0c                FLEXCOM5_InterruptHandler
+                0x0000000001013dac       0xb4 build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
+                0x0000000001013dac                FLEXCOM5_InterruptHandler
 
-.text.SYS_TIME_TimerObjectCreate%67
-                0x0000000001013ec0       0xb0
+.text.SYS_TIME_TimerObjectCreate%68
+                0x0000000001013e60       0xb0
  .text.SYS_TIME_TimerObjectCreate
-                0x0000000001013ec0       0xb0 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001013e60       0xb0 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
-.text.FLEXCOM5_SPI_WriteRead%68
-                0x0000000001013f70       0xac
+.text.FLEXCOM5_SPI_WriteRead%69
+                0x0000000001013f10       0xac
  .text.FLEXCOM5_SPI_WriteRead
-                0x0000000001013f70       0xac build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
-                0x0000000001013f70                FLEXCOM5_SPI_WriteRead
+                0x0000000001013f10       0xac build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
+                0x0000000001013f10                FLEXCOM5_SPI_WriteRead
 
-.text.SYS_TIME_HwTimerCompareUpdate%69
-                0x000000000101401c       0xa8
+.text.SYS_TIME_HwTimerCompareUpdate%70
+                0x0000000001013fbc       0xa8
  .text.SYS_TIME_HwTimerCompareUpdate
-                0x000000000101401c       0xa8 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001013fbc       0xa8 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
-.text.Reset_Handler%70
-                0x00000000010140c4       0xa4
+.text.Reset_Handler%71
+                0x0000000001014064       0xa4
  .text.Reset_Handler
-                0x00000000010140c4       0xa4 build/pic32cxmtg/debug/_ext/1545560501/startup_xc32.o
-                0x00000000010140c4                Reset_Handler
+                0x0000000001014064       0xa4 build/pic32cxmtg/debug/_ext/1545560501/startup_xc32.o
+                0x0000000001014064                Reset_Handler
 
-.text.lDRV_PLC_BOOT_EnableBootCmd%71
-                0x0000000001014168       0x9c
+.text.lDRV_PLC_BOOT_EnableBootCmd%72
+                0x0000000001014108       0x9c
  .text.lDRV_PLC_BOOT_EnableBootCmd
-                0x0000000001014168       0x9c build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
+                0x0000000001014108       0x9c build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
 
-.text.DRV_PLC_HAL_SendBootCmd%72
-                0x0000000001014204       0x98
+.text.DRV_PLC_HAL_SendBootCmd%73
+                0x00000000010141a4       0x98
  .text.DRV_PLC_HAL_SendBootCmd
-                0x0000000001014204       0x98 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x0000000001014204                DRV_PLC_HAL_SendBootCmd
+                0x00000000010141a4       0x98 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x00000000010141a4                DRV_PLC_HAL_SendBootCmd
 
-.text.UART_ISR_RX_Handler%73
-                0x000000000101429c       0x94
+.text.UART_ISR_RX_Handler%74
+                0x000000000101423c       0x94
  .text.UART_ISR_RX_Handler
-                0x000000000101429c       0x94 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x000000000101423c       0x94 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
 
-.rodata.srvPlcCoupPredistCoefHigh%74
-                0x0000000001014330       0x90
+.rodata.srvPlcCoupPredistCoefHigh%75
+                0x00000000010142d0       0x90
  .rodata.srvPlcCoupPredistCoefHigh
-                0x0000000001014330       0x90 build/pic32cxmtg/debug/_ext/1540903485/srv_pcoup.o
+                0x00000000010142d0       0x90 build/pic32cxmtg/debug/_ext/1540903485/srv_pcoup.o
 
-.rodata.srvPlcCoupPredistCoefVLow%75
-                0x00000000010143c0       0x90
+.rodata.srvPlcCoupPredistCoefVLow%76
+                0x0000000001014360       0x90
  .rodata.srvPlcCoupPredistCoefVLow
-                0x00000000010143c0       0x90 build/pic32cxmtg/debug/_ext/1540903485/srv_pcoup.o
+                0x0000000001014360       0x90 build/pic32cxmtg/debug/_ext/1540903485/srv_pcoup.o
 
-.text.SYS_TIME_AddToList%76
-                0x0000000001014450       0x90
+.text.SYS_TIME_AddToList%77
+                0x00000000010143f0       0x90
  .text.SYS_TIME_AddToList
-                0x0000000001014450       0x90 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x00000000010143f0       0x90 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
-.text.DRV_G3_MACRT_PIBSet%77
-                0x00000000010144e0       0x8c
+.text.DRV_G3_MACRT_PIBSet%78
+                0x0000000001014480       0x8c
  .text.DRV_G3_MACRT_PIBSet
-                0x00000000010144e0       0x8c build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
-                0x00000000010144e0                DRV_G3_MACRT_PIBSet
+                0x0000000001014480       0x8c build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
+                0x0000000001014480                DRV_G3_MACRT_PIBSet
 
-.text.NVIC_Initialize%78
-                0x000000000101456c       0x88
+.text.NVIC_Initialize%79
+                0x000000000101450c       0x88
  .text.NVIC_Initialize
-                0x000000000101456c       0x88 build/pic32cxmtg/debug/_ext/1051740869/plib_nvic.o
-                0x000000000101456c                NVIC_Initialize
+                0x000000000101450c       0x88 build/pic32cxmtg/debug/_ext/1051740869/plib_nvic.o
+                0x000000000101450c                NVIC_Initialize
 
-.text.PLLInitialize%79
-                0x00000000010145f4       0x84
+.text.PLLInitialize%80
+                0x0000000001014594       0x84
  .text.PLLInitialize
-                0x00000000010145f4       0x84 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
+                0x0000000001014594       0x84 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
 
-.text.UART_Read%80
-                0x0000000001014678       0x84
+.text.UART_Read%81
+                0x0000000001014618       0x84
  .text.UART_Read
-                0x0000000001014678       0x84 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
-                0x0000000001014678                UART_Read
+                0x0000000001014618       0x84 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001014618                UART_Read
 
-.text.DRV_G3_MACRT_TxRequest%81
-                0x00000000010146fc       0x7c
+.text.DRV_G3_MACRT_TxRequest%82
+                0x000000000101469c       0x7c
  .text.DRV_G3_MACRT_TxRequest
-                0x00000000010146fc       0x7c build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
-                0x00000000010146fc                DRV_G3_MACRT_TxRequest
+                0x000000000101469c       0x7c build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
+                0x000000000101469c                DRV_G3_MACRT_TxRequest
 
-.text.UART_ISR_TX_Handler%82
-                0x0000000001014778       0x7c
+.text.UART_ISR_TX_Handler%83
+                0x0000000001014718       0x7c
  .text.UART_ISR_TX_Handler
-                0x0000000001014778       0x7c build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001014718       0x7c build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
 
-.text.SYS_Initialize%83
-                0x00000000010147f4       0x78
+.text.SYS_Initialize%84
+                0x0000000001014794       0x78
  .text.SYS_Initialize
-                0x00000000010147f4       0x78 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
-                0x00000000010147f4                SYS_Initialize
+                0x0000000001014794       0x78 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
+                0x0000000001014794                SYS_Initialize
 
-.text.SRV_PVDDMON_Restart%84
-                0x000000000101486c       0x74
+.text.SRV_PVDDMON_Restart%85
+                0x000000000101480c       0x74
  .text.SRV_PVDDMON_Restart
-                0x000000000101486c       0x74 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
-                0x000000000101486c                SRV_PVDDMON_Restart
+                0x000000000101480c       0x74 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
+                0x000000000101480c                SRV_PVDDMON_Restart
 
-.text.DRV_PLC_BOOT_Restart%85
-                0x00000000010148e0       0x6c
+.text.DRV_PLC_BOOT_Restart%86
+                0x0000000001014880       0x6c
  .text.DRV_PLC_BOOT_Restart
-                0x00000000010148e0       0x6c build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
-                0x00000000010148e0                DRV_PLC_BOOT_Restart
+                0x0000000001014880       0x6c build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
+                0x0000000001014880                DRV_PLC_BOOT_Restart
 
-.text.PIO_PinInterruptCallbackRegister%86
-                0x000000000101494c       0x6c
+.text.PIO_PinInterruptCallbackRegister%87
+                0x00000000010148ec       0x6c
  .text.PIO_PinInterruptCallbackRegister
-                0x000000000101494c       0x6c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
-                0x000000000101494c                PIO_PinInterruptCallbackRegister
+                0x00000000010148ec       0x6c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x00000000010148ec                PIO_PinInterruptCallbackRegister
 
-.text.lDRV_G3_MACRT_COMM_SpiWriteCmd%87
-                0x00000000010149b8       0x68
+.text.lDRV_G3_MACRT_COMM_SpiWriteCmd%88
+                0x0000000001014958       0x68
  .text.lDRV_G3_MACRT_COMM_SpiWriteCmd
-                0x00000000010149b8       0x68 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
+                0x0000000001014958       0x68 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
 
-.text.SRV_PVDDMON_Start%88
-                0x0000000001014a20       0x68
+.text.SRV_PVDDMON_Start%89
+                0x00000000010149c0       0x68
  .text.SRV_PVDDMON_Start
-                0x0000000001014a20       0x68 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
-                0x0000000001014a20                SRV_PVDDMON_Start
+                0x00000000010149c0       0x68 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
+                0x00000000010149c0                SRV_PVDDMON_Start
 
-.text.DRV_PLC_HAL_Reset%89
-                0x0000000001014a88       0x64
+.text.DRV_PLC_HAL_Reset%90
+                0x0000000001014a28       0x64
  .text.DRV_PLC_HAL_Reset
-                0x0000000001014a88       0x64 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x0000000001014a88                DRV_PLC_HAL_Reset
+                0x0000000001014a28       0x64 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x0000000001014a28                DRV_PLC_HAL_Reset
 
-.text.DRV_PLC_HAL_SetStandBy%90
-                0x0000000001014aec       0x64
+.text.DRV_PLC_HAL_SetStandBy%91
+                0x0000000001014a8c       0x64
  .text.DRV_PLC_HAL_SetStandBy
-                0x0000000001014aec       0x64 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x0000000001014aec                DRV_PLC_HAL_SetStandBy
+                0x0000000001014a8c       0x64 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x0000000001014a8c                DRV_PLC_HAL_SetStandBy
 
-.text.DRV_G3_MACRT_Initialize%91
-                0x0000000001014b50       0x64
+.text.DRV_G3_MACRT_Initialize%92
+                0x0000000001014af0       0x64
  .text.DRV_G3_MACRT_Initialize
-                0x0000000001014b50       0x64 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
-                0x0000000001014b50                DRV_G3_MACRT_Initialize
+                0x0000000001014af0       0x64 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
+                0x0000000001014af0                DRV_G3_MACRT_Initialize
 
-.text.lDRV_G3_MACRT_COMM_SpiReadCmd%92
-                0x0000000001014bb4       0x64
+.text.lDRV_G3_MACRT_COMM_SpiReadCmd%93
+                0x0000000001014b54       0x64
  .text.lDRV_G3_MACRT_COMM_SpiReadCmd
-                0x0000000001014bb4       0x64 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
+                0x0000000001014b54       0x64 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
 
-.text.DRV_G3_MACRT_Tasks%93
-                0x0000000001014c18       0x5c
+.text.DRV_G3_MACRT_Tasks%94
+                0x0000000001014bb8       0x5c
  .text.DRV_G3_MACRT_Tasks
-                0x0000000001014c18       0x5c build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
-                0x0000000001014c18                DRV_G3_MACRT_Tasks
+                0x0000000001014bb8       0x5c build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
+                0x0000000001014bb8                DRV_G3_MACRT_Tasks
 
-.text.FLEXCOM5_SPI_TransferSetup%94
-                0x0000000001014c74       0x5c
+.text.FLEXCOM5_SPI_TransferSetup%95
+                0x0000000001014c14       0x5c
  .text.FLEXCOM5_SPI_TransferSetup
-                0x0000000001014c74       0x5c build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
-                0x0000000001014c74                FLEXCOM5_SPI_TransferSetup
+                0x0000000001014c14       0x5c build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
+                0x0000000001014c14                FLEXCOM5_SPI_TransferSetup
 
-.text.SYS_TIME_RemoveFromList%95
-                0x0000000001014cd0       0x5c
+.text.SYS_TIME_RemoveFromList%96
+                0x0000000001014c70       0x5c
  .text.SYS_TIME_RemoveFromList
-                0x0000000001014cd0       0x5c build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001014c70       0x5c build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
-.text.__libc_start_init%96
-                0x0000000001014d2c       0x5c
+.text.__libc_start_init%97
+                0x0000000001014ccc       0x5c
  .text.__libc_start_init
-                0x0000000001014d2c       0x5c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
-                0x0000000001014d2c                __libc_init_array
+                0x0000000001014ccc       0x5c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+                0x0000000001014ccc                __libc_init_array
 
-.text.lDRV_PLC_BOOT_GetSecureInfo%97
-                0x0000000001014d88       0x58
+.text.lDRV_PLC_BOOT_GetSecureInfo%98
+                0x0000000001014d28       0x58
  .text.lDRV_PLC_BOOT_GetSecureInfo
-                0x0000000001014d88       0x58 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
+                0x0000000001014d28       0x58 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
 
-.text.DRV_G3_MACRT_Open%98
-                0x0000000001014de0       0x58
+.text.DRV_G3_MACRT_Open%99
+                0x0000000001014d80       0x58
  .text.DRV_G3_MACRT_Open
-                0x0000000001014de0       0x58 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
-                0x0000000001014de0                DRV_G3_MACRT_Open
+                0x0000000001014d80       0x58 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
+                0x0000000001014d80                DRV_G3_MACRT_Open
 
-.text.RSTC_PMCResetStatusGet%99
-                0x0000000001014e38       0x58
+.text.RSTC_PMCResetStatusGet%100
+                0x0000000001014dd8       0x58
  .text.RSTC_PMCResetStatusGet
-                0x0000000001014e38       0x58 build/pic32cxmtg/debug/_ext/1051624247/plib_rstc.o
-                0x0000000001014e38                RSTC_PMCResetStatusGet
+                0x0000000001014dd8       0x58 build/pic32cxmtg/debug/_ext/1051624247/plib_rstc.o
+                0x0000000001014dd8                RSTC_PMCResetStatusGet
 
-.text.SYS_TIME_TimerAdd%100
-                0x0000000001014e90       0x58
+.text.SYS_TIME_TimerAdd%101
+                0x0000000001014e30       0x58
  .text.SYS_TIME_TimerAdd
-                0x0000000001014e90       0x58 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001014e30       0x58 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
-.text.SYS_TIME_TimerStart%101
-                0x0000000001014ee8       0x58
+.text.SYS_TIME_TimerStart%102
+                0x0000000001014e88       0x58
  .text.SYS_TIME_TimerStart
-                0x0000000001014ee8       0x58 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
-                0x0000000001014ee8                SYS_TIME_TimerStart
+                0x0000000001014e88       0x58 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001014e88                SYS_TIME_TimerStart
 
-.text.SYS_TIME_CallbackRegisterMS%102
-                0x0000000001014f40       0x54
+.text.SYS_TIME_CallbackRegisterMS%103
+                0x0000000001014ee0       0x54
  .text.SYS_TIME_CallbackRegisterMS
-                0x0000000001014f40       0x54 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
-                0x0000000001014f40                SYS_TIME_CallbackRegisterMS
+                0x0000000001014ee0       0x54 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001014ee0                SYS_TIME_CallbackRegisterMS
 
-.text.lDRV_PLC_BOOT_DisableBootCmd%103
-                0x0000000001014f94       0x50
+.text.lDRV_PLC_BOOT_DisableBootCmd%104
+                0x0000000001014f34       0x50
  .text.lDRV_PLC_BOOT_DisableBootCmd
-                0x0000000001014f94       0x50 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
+                0x0000000001014f34       0x50 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
 
-.text.lDRV_G3_MACRT_COMM_CheckComm%104
-                0x0000000001014fe4       0x50
+.text.lDRV_G3_MACRT_COMM_CheckComm%105
+                0x0000000001014f84       0x50
  .text.lDRV_G3_MACRT_COMM_CheckComm
-                0x0000000001014fe4       0x50 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
+                0x0000000001014f84       0x50 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
 
-.text.FLEXCOM0_USART_Write%105
-                0x0000000001015034       0x50
+.text.FLEXCOM0_USART_Write%106
+                0x0000000001014fd4       0x50
  .text.FLEXCOM0_USART_Write
-                0x0000000001015034       0x50 build/pic32cxmtg/debug/_ext/1260474139/plib_flexcom0_usart.o
-                0x0000000001015034                FLEXCOM0_USART_Write
+                0x0000000001014fd4       0x50 build/pic32cxmtg/debug/_ext/1260474139/plib_flexcom0_usart.o
+                0x0000000001014fd4                FLEXCOM0_USART_Write
 
-.text.SYS_TIME_DelayUS%106
-                0x0000000001015084       0x50
+.text.SYS_TIME_DelayUS%107
+                0x0000000001015024       0x50
  .text.SYS_TIME_DelayUS
-                0x0000000001015084       0x50 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
-                0x0000000001015084                SYS_TIME_DelayUS
+                0x0000000001015024       0x50 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001015024                SYS_TIME_DelayUS
 
-.text.UART_InterruptHandler%107
-                0x00000000010150d4       0x4c
+.text.UART_InterruptHandler%108
+                0x0000000001015074       0x4c
  .text.UART_InterruptHandler
-                0x00000000010150d4       0x4c build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
-                0x00000000010150d4                UART_InterruptHandler
+                0x0000000001015074       0x4c build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001015074                UART_InterruptHandler
 
-.text.DRV_G3_MACRT_Init%108
-                0x0000000001015120       0x48
+.text.DRV_G3_MACRT_Init%109
+                0x00000000010150c0       0x48
  .text.DRV_G3_MACRT_Init
-                0x0000000001015120       0x48 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
-                0x0000000001015120                DRV_G3_MACRT_Init
-
-.text.usartReadEventHandler%109
-                0x0000000001015168       0x48
- .text.usartReadEventHandler
-                0x0000000001015168       0x48 build/pic32cxmtg/debug/_ext/1360937237/app.o
-                0x0000000001015168                usartReadEventHandler
+                0x00000000010150c0       0x48 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt_local_comm.o
+                0x00000000010150c0                DRV_G3_MACRT_Init
 
 .text.DRV_PLC_BOOT_Start%110
-                0x00000000010151b0       0x44
+                0x0000000001015108       0x44
  .text.DRV_PLC_BOOT_Start
-                0x00000000010151b0       0x44 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
-                0x00000000010151b0                DRV_PLC_BOOT_Start
+                0x0000000001015108       0x44 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
+                0x0000000001015108                DRV_PLC_BOOT_Start
 
 .text.DRV_PLC_HAL_EnableInterrupts%111
-                0x00000000010151f4       0x44
+                0x000000000101514c       0x44
  .text.DRV_PLC_HAL_EnableInterrupts
-                0x00000000010151f4       0x44 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x00000000010151f4                DRV_PLC_HAL_EnableInterrupts
+                0x000000000101514c       0x44 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x000000000101514c                DRV_PLC_HAL_EnableInterrupts
 
 .text.UART_Initialize%112
-                0x0000000001015238       0x44
+                0x0000000001015190       0x44
  .text.UART_Initialize
-                0x0000000001015238       0x44 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
-                0x0000000001015238                UART_Initialize
+                0x0000000001015190       0x44 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001015190                UART_Initialize
 
 .text.SYS_INT_SourceDisable%113
-                0x000000000101527c       0x44
+                0x00000000010151d4       0x44
  .text.SYS_INT_SourceDisable
-                0x000000000101527c       0x44 build/pic32cxmtg/debug/_ext/1787564926/sys_int.o
-                0x000000000101527c                SYS_INT_SourceDisable
+                0x00000000010151d4       0x44 build/pic32cxmtg/debug/_ext/1787564926/sys_int.o
+                0x00000000010151d4                SYS_INT_SourceDisable
 
 .text.APP_PLC_RxParamsIndCallback%114
-                0x00000000010152c0       0x44
+                0x0000000001015218       0x44
  .text.APP_PLC_RxParamsIndCallback
-                0x00000000010152c0       0x44 build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001015218       0x44 build/pic32cxmtg/debug/_ext/1360937237/app.o
 
-.text%115       0x0000000001015304       0x40
- .text          0x0000000001015304       0x40 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.text%115       0x000000000101525c       0x40
+ .text          0x000000000101525c       0x40 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata%116     0x0000000001015344       0x40
- .rodata        0x0000000001015344       0x40 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
+.rodata%116     0x000000000101529c       0x40
+ .rodata        0x000000000101529c       0x40 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
 
 .text.DRV_PLC_HAL_Init%117
-                0x0000000001015384       0x3c
+                0x00000000010152dc       0x3c
  .text.DRV_PLC_HAL_Init
-                0x0000000001015384       0x3c build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x0000000001015384                DRV_PLC_HAL_Init
+                0x00000000010152dc       0x3c build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x00000000010152dc                DRV_PLC_HAL_Init
 
 .text.DRV_PLC_HAL_Setup%118
-                0x00000000010153c0       0x3c
+                0x0000000001015318       0x3c
  .text.DRV_PLC_HAL_Setup
-                0x00000000010153c0       0x3c build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x00000000010153c0                DRV_PLC_HAL_Setup
+                0x0000000001015318       0x3c build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x0000000001015318                DRV_PLC_HAL_Setup
 
 .text.FLEXCOM0_USART_Initialize%119
-                0x00000000010153fc       0x3c
+                0x0000000001015354       0x3c
  .text.FLEXCOM0_USART_Initialize
-                0x00000000010153fc       0x3c build/pic32cxmtg/debug/_ext/1260474139/plib_flexcom0_usart.o
-                0x00000000010153fc                FLEXCOM0_USART_Initialize
+                0x0000000001015354       0x3c build/pic32cxmtg/debug/_ext/1260474139/plib_flexcom0_usart.o
+                0x0000000001015354                FLEXCOM0_USART_Initialize
 
 .text.SUPC_Initialize%120
-                0x0000000001015438       0x3c
+                0x0000000001015390       0x3c
  .text.SUPC_Initialize
-                0x0000000001015438       0x3c build/pic32cxmtg/debug/_ext/1051592658/plib_supc.o
-                0x0000000001015438                SUPC_Initialize
+                0x0000000001015390       0x3c build/pic32cxmtg/debug/_ext/1051592658/plib_supc.o
+                0x0000000001015390                SUPC_Initialize
 
 .text.SYS_TIME_GetTimerObject%121
-                0x0000000001015474       0x3c
+                0x00000000010153cc       0x3c
  .text.SYS_TIME_GetTimerObject
-                0x0000000001015474       0x3c build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x00000000010153cc       0x3c build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
 .text.SYS_TIME_TimerDestroy%122
-                0x00000000010154b0       0x3c
+                0x0000000001015408       0x3c
  .text.SYS_TIME_TimerDestroy
-                0x00000000010154b0       0x3c build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
-                0x00000000010154b0                SYS_TIME_TimerDestroy
+                0x0000000001015408       0x3c build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001015408                SYS_TIME_TimerDestroy
 
-.rodata.APP_Tasks.str1.4%123
-                0x00000000010154ec       0x3c
- .rodata.APP_Tasks.str1.4
-                0x00000000010154ec       0x3c build/pic32cxmtg/debug/_ext/1360937237/app.o
-
-.text.FLEXCOM5_SPI_Initialize%124
-                0x0000000001015528       0x38
+.text.FLEXCOM5_SPI_Initialize%123
+                0x0000000001015444       0x38
  .text.FLEXCOM5_SPI_Initialize
-                0x0000000001015528       0x38 build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
-                0x0000000001015528                FLEXCOM5_SPI_Initialize
+                0x0000000001015444       0x38 build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
+                0x0000000001015444                FLEXCOM5_SPI_Initialize
 
-.text.PIOA_InterruptHandler%125
-                0x0000000001015560       0x38
+.text.PIOA_InterruptHandler%124
+                0x000000000101547c       0x38
  .text.PIOA_InterruptHandler
-                0x0000000001015560       0x38 build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
-                0x0000000001015560                PIOA_InterruptHandler
+                0x000000000101547c       0x38 build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x000000000101547c                PIOA_InterruptHandler
 
-.text.SYS_TIME_ResourceLock%126
-                0x0000000001015598       0x38
+.text.SYS_TIME_ResourceLock%125
+                0x00000000010154b4       0x38
  .text.SYS_TIME_ResourceLock
-                0x0000000001015598       0x38 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x00000000010154b4       0x38 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
-.text.DRV_PLC_HAL_SetTxEnable%127
-                0x00000000010155d0       0x34
+.text.DRV_PLC_HAL_SetTxEnable%126
+                0x00000000010154ec       0x34
  .text.DRV_PLC_HAL_SetTxEnable
-                0x00000000010155d0       0x34 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x00000000010155d0                DRV_PLC_HAL_SetTxEnable
+                0x00000000010154ec       0x34 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x00000000010154ec                DRV_PLC_HAL_SetTxEnable
+
+.text.usartReadEventHandler%127
+                0x0000000001015520       0x34
+ .text.usartReadEventHandler
+                0x0000000001015520       0x34 build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001015520                usartReadEventHandler
 
 .text.APP_PLC_PVDDMonitorCallback%128
-                0x0000000001015604       0x34
+                0x0000000001015554       0x34
  .text.APP_PLC_PVDDMonitorCallback
-                0x0000000001015604       0x34 build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001015554       0x34 build/pic32cxmtg/debug/_ext/1360937237/app.o
 
 .text.__pic32c_data_initialization%129
-                0x0000000001015638       0x34
+                0x0000000001015588       0x34
  .text.__pic32c_data_initialization
-                0x0000000001015638       0x34 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
-                0x0000000001015638                __pic32c_data_initialization
+                0x0000000001015588       0x34 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+                0x0000000001015588                __pic32c_data_initialization
 
 .text.lDRV_PLC_BOOT_Rev%130
-                0x000000000101566c       0x30
+                0x00000000010155bc       0x30
  .text.lDRV_PLC_BOOT_Rev
-                0x000000000101566c       0x30 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
+                0x00000000010155bc       0x30 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
 
 .text.ADC_Initialize%131
-                0x000000000101569c       0x30
+                0x00000000010155ec       0x30
  .text.ADC_Initialize
-                0x000000000101569c       0x30 build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
-                0x000000000101569c                ADC_Initialize
+                0x00000000010155ec       0x30 build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
+                0x00000000010155ec                ADC_Initialize
 
 .text.SYS_TIME_UpdateTimerList%132
-                0x00000000010156cc       0x30
+                0x000000000101561c       0x30
  .text.SYS_TIME_UpdateTimerList
-                0x00000000010156cc       0x30 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x000000000101561c       0x30 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
 .text._on_reset%133
-                0x00000000010156fc       0x30
+                0x000000000101564c       0x30
  .text._on_reset
-                0x00000000010156fc       0x30 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
-                0x00000000010156fc                _on_reset
+                0x000000000101564c       0x30 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
+                0x000000000101564c                _on_reset
 
 .text.APP_Initialize%134
-                0x000000000101572c       0x30
+                0x000000000101567c       0x30
  .text.APP_Initialize
-                0x000000000101572c       0x30 build/pic32cxmtg/debug/_ext/1360937237/app.o
-                0x000000000101572c                APP_Initialize
+                0x000000000101567c       0x30 build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x000000000101567c                APP_Initialize
 
-.text%135       0x000000000101575c       0x30
- .text          0x000000000101575c       0x30 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
-                0x000000000101575c                __aeabi_uldivmod
+.text%135       0x00000000010156ac       0x30
+ .text          0x00000000010156ac       0x30 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x00000000010156ac                __aeabi_uldivmod
 
 .text.APP_PLC_DataIndCallback%136
-                0x000000000101578c       0x2c
+                0x00000000010156dc       0x2c
  .text.APP_PLC_DataIndCallback
-                0x000000000101578c       0x2c build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x00000000010156dc       0x2c build/pic32cxmtg/debug/_ext/1360937237/app.o
 
 .text.UART_Reset%137
-                0x00000000010157b8       0x2c
+                0x0000000001015708       0x2c
  .text.UART_Reset
-                0x00000000010157b8       0x2c build/pic32cxmtg/debug/_ext/1360937237/app.o
-                0x00000000010157b8                UART_Reset
+                0x0000000001015708       0x2c build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001015708                UART_Reset
 
 .text.DRV_PLC_HAL_GetThermalMonitor%138
-                0x00000000010157e4       0x28
+                0x0000000001015734       0x28
  .text.DRV_PLC_HAL_GetThermalMonitor
-                0x00000000010157e4       0x28 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x00000000010157e4                DRV_PLC_HAL_GetThermalMonitor
+                0x0000000001015734       0x28 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x0000000001015734                DRV_PLC_HAL_GetThermalMonitor
 
 .text.setupDMA%139
-                0x000000000101580c       0x28
+                0x000000000101575c       0x28
  .text.setupDMA
-                0x000000000101580c       0x28 build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
+                0x000000000101575c       0x28 build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
 
 .text.SYS_TIME_TimerPeriodHasExpired%140
-                0x0000000001015834       0x28
+                0x0000000001015784       0x28
  .text.SYS_TIME_TimerPeriodHasExpired
-                0x0000000001015834       0x28 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
-                0x0000000001015834                SYS_TIME_TimerPeriodHasExpired
+                0x0000000001015784       0x28 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001015784                SYS_TIME_TimerPeriodHasExpired
 
-.text.main%141  0x000000000101585c       0x28
- .text.main     0x000000000101585c       0x28 build/pic32cxmtg/debug/_ext/1360937237/main.o
-                0x000000000101585c                main
-
-.text.lDRV_PLC_BOOT_CheckStatus%142
-                0x0000000001015884       0x24
+.text.lDRV_PLC_BOOT_CheckStatus%141
+                0x00000000010157ac       0x24
  .text.lDRV_PLC_BOOT_CheckStatus
-                0x0000000001015884       0x24 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
+                0x00000000010157ac       0x24 build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
 
-.text.PIO_PortOutputEnable%143
-                0x00000000010158a8       0x24
+.text.PIO_PortOutputEnable%142
+                0x00000000010157d0       0x24
  .text.PIO_PortOutputEnable
-                0x00000000010158a8       0x24 build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
-                0x00000000010158a8                PIO_PortOutputEnable
+                0x00000000010157d0       0x24 build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x00000000010157d0                PIO_PortOutputEnable
 
-.text.TC0_CH0_InterruptHandler%144
-                0x00000000010158cc       0x24
+.text.TC0_CH0_InterruptHandler%143
+                0x00000000010157f4       0x24
  .text.TC0_CH0_InterruptHandler
-                0x00000000010158cc       0x24 build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
-                0x00000000010158cc                TC0_CH0_InterruptHandler
+                0x00000000010157f4       0x24 build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
+                0x00000000010157f4                TC0_CH0_InterruptHandler
 
-.text.lADC_PVDDMONCallback%145
-                0x00000000010158f0       0x24
+.text.lADC_PVDDMONCallback%144
+                0x0000000001015818       0x24
  .text.lADC_PVDDMONCallback
-                0x00000000010158f0       0x24 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
+                0x0000000001015818       0x24 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
 
-.text.SYS_TIME_ResourceUnlock%146
-                0x0000000001015914       0x24
+.text.SYS_TIME_ResourceUnlock%145
+                0x000000000101583c       0x24
  .text.SYS_TIME_ResourceUnlock
-                0x0000000001015914       0x24 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x000000000101583c       0x24 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
 
-.text.DRV_PLC_HAL_Delay%147
-                0x0000000001015938       0x22
+.text.DRV_PLC_HAL_Delay%146
+                0x0000000001015860       0x22
  .text.DRV_PLC_HAL_Delay
-                0x0000000001015938       0x22 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x0000000001015938                DRV_PLC_HAL_Delay
+                0x0000000001015860       0x22 build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x0000000001015860                DRV_PLC_HAL_Delay
 
-.text.ADC_InterruptHandler%148
-                0x000000000101595c       0x20
+.text.ADC_InterruptHandler%147
+                0x0000000001015884       0x20
  .text.ADC_InterruptHandler
-                0x000000000101595c       0x20 build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
-                0x000000000101595c                ADC_InterruptHandler
+                0x0000000001015884       0x20 build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
+                0x0000000001015884                ADC_InterruptHandler
 
-.text.RSTC_Initialize%149
-                0x000000000101597c       0x20
+.text.RSTC_Initialize%148
+                0x00000000010158a4       0x20
  .text.RSTC_Initialize
-                0x000000000101597c       0x20 build/pic32cxmtg/debug/_ext/1051624247/plib_rstc.o
-                0x000000000101597c                RSTC_Initialize
+                0x00000000010158a4       0x20 build/pic32cxmtg/debug/_ext/1051624247/plib_rstc.o
+                0x00000000010158a4                RSTC_Initialize
 
-.text.SEFC0_Initialize%150
-                0x000000000101599c       0x20
+.text.SEFC0_Initialize%149
+                0x00000000010158c4       0x20
  .text.SEFC0_Initialize
-                0x000000000101599c       0x20 build/pic32cxmtg/debug/_ext/1051608344/plib_sefc0.o
-                0x000000000101599c                SEFC0_Initialize
+                0x00000000010158c4       0x20 build/pic32cxmtg/debug/_ext/1051608344/plib_sefc0.o
+                0x00000000010158c4                SEFC0_Initialize
 
-.text.SEFC1_Initialize%151
-                0x00000000010159bc       0x20
+.text.SEFC1_Initialize%150
+                0x00000000010158e4       0x20
  .text.SEFC1_Initialize
-                0x00000000010159bc       0x20 build/pic32cxmtg/debug/_ext/1051608344/plib_sefc1.o
-                0x00000000010159bc                SEFC1_Initialize
+                0x00000000010158e4       0x20 build/pic32cxmtg/debug/_ext/1051608344/plib_sefc1.o
+                0x00000000010158e4                SEFC1_Initialize
 
-.text.TC0_CH0_TimerInitialize%152
-                0x00000000010159dc       0x20
+.text.TC0_CH0_TimerInitialize%151
+                0x0000000001015904       0x20
  .text.TC0_CH0_TimerInitialize
-                0x00000000010159dc       0x20 build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
-                0x00000000010159dc                TC0_CH0_TimerInitialize
+                0x0000000001015904       0x20 build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
+                0x0000000001015904                TC0_CH0_TimerInitialize
 
-.text.SYS_INT_SourceRestore%153
-                0x00000000010159fc       0x20
+.text.SYS_INT_SourceRestore%152
+                0x0000000001015924       0x20
  .text.SYS_INT_SourceRestore
-                0x00000000010159fc       0x20 build/pic32cxmtg/debug/_ext/1787564926/sys_int.o
-                0x00000000010159fc                SYS_INT_SourceRestore
+                0x0000000001015924       0x20 build/pic32cxmtg/debug/_ext/1787564926/sys_int.o
+                0x0000000001015924                SYS_INT_SourceRestore
 
-.text.DRV_PLC_HAL_GetPinLevel%154
-                0x0000000001015a1c       0x1e
+.text.DRV_PLC_HAL_GetPinLevel%153
+                0x0000000001015944       0x1e
  .text.DRV_PLC_HAL_GetPinLevel
-                0x0000000001015a1c       0x1e build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
-                0x0000000001015a1c                DRV_PLC_HAL_GetPinLevel
+                0x0000000001015944       0x1e build/pic32cxmtg/debug/_ext/160729472/drv_plc_hal.o
+                0x0000000001015944                DRV_PLC_HAL_GetPinLevel
 
-.text.__dinit_copy%155
-                0x0000000001015a3a       0x1e
+.text.__dinit_copy%154
+                0x0000000001015962       0x1e
  .text.__dinit_copy
-                0x0000000001015a3a       0x1e c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
-                0x0000000001015a3a                __dinit_copy_needed
-                0x0000000001015a3a                __dinit_copy
+                0x0000000001015962       0x1e c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+                0x0000000001015962                __dinit_copy_needed
+                0x0000000001015962                __dinit_copy
 
-.text.DWDT_Initialize%156
-                0x0000000001015a58       0x1c
+.text.DWDT_Initialize%155
+                0x0000000001015980       0x1c
  .text.DWDT_Initialize
-                0x0000000001015a58       0x1c build/pic32cxmtg/debug/_ext/1052037956/plib_dwdt.o
-                0x0000000001015a58                DWDT_Initialize
+                0x0000000001015980       0x1c build/pic32cxmtg/debug/_ext/1052037956/plib_dwdt.o
+                0x0000000001015980                DWDT_Initialize
 
-.text.PIO_PortRead%157
-                0x0000000001015a74       0x1c
+.text.PIO_PortRead%156
+                0x000000000101599c       0x1c
  .text.PIO_PortRead
-                0x0000000001015a74       0x1c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
-                0x0000000001015a74                PIO_PortRead
+                0x000000000101599c       0x1c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x000000000101599c                PIO_PortRead
 
-.text.PIO_PortSet%158
-                0x0000000001015a90       0x1c
+.text.PIO_PortSet%157
+                0x00000000010159b8       0x1c
  .text.PIO_PortSet
-                0x0000000001015a90       0x1c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
-                0x0000000001015a90                PIO_PortSet
+                0x00000000010159b8       0x1c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x00000000010159b8                PIO_PortSet
 
-.text.PIO_PortClear%159
-                0x0000000001015aac       0x1c
+.text.PIO_PortClear%158
+                0x00000000010159d4       0x1c
  .text.PIO_PortClear
-                0x0000000001015aac       0x1c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
-                0x0000000001015aac                PIO_PortClear
+                0x00000000010159d4       0x1c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x00000000010159d4                PIO_PortClear
 
-.text.PIO_PortInterruptEnable%160
-                0x0000000001015ac8       0x1c
+.text.PIO_PortInterruptEnable%159
+                0x00000000010159f0       0x1c
  .text.PIO_PortInterruptEnable
-                0x0000000001015ac8       0x1c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
-                0x0000000001015ac8                PIO_PortInterruptEnable
+                0x00000000010159f0       0x1c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x00000000010159f0                PIO_PortInterruptEnable
 
-.text.PIO_PortInterruptDisable%161
-                0x0000000001015ae4       0x1c
+.text.PIO_PortInterruptDisable%160
+                0x0000000001015a0c       0x1c
  .text.PIO_PortInterruptDisable
-                0x0000000001015ae4       0x1c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
-                0x0000000001015ae4                PIO_PortInterruptDisable
+                0x0000000001015a0c       0x1c build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x0000000001015a0c                PIO_PortInterruptDisable
 
-.text.SEFC0_FlashPanelBaseAddrGet%162
-                0x0000000001015b00       0x1c
+.text.SEFC0_FlashPanelBaseAddrGet%161
+                0x0000000001015a28       0x1c
  .text.SEFC0_FlashPanelBaseAddrGet
-                0x0000000001015b00       0x1c build/pic32cxmtg/debug/_ext/1051608344/plib_sefc0.o
-                0x0000000001015b00                SEFC0_FlashPanelBaseAddrGet
+                0x0000000001015a28       0x1c build/pic32cxmtg/debug/_ext/1051608344/plib_sefc0.o
+                0x0000000001015a28                SEFC0_FlashPanelBaseAddrGet
 
-.text.SEFC1_FlashPanelBaseAddrGet%163
-                0x0000000001015b1c       0x1c
+.text.SEFC1_FlashPanelBaseAddrGet%162
+                0x0000000001015a44       0x1c
  .text.SEFC1_FlashPanelBaseAddrGet
-                0x0000000001015b1c       0x1c build/pic32cxmtg/debug/_ext/1051608344/plib_sefc1.o
-                0x0000000001015b1c                SEFC1_FlashPanelBaseAddrGet
+                0x0000000001015a44       0x1c build/pic32cxmtg/debug/_ext/1051608344/plib_sefc1.o
+                0x0000000001015a44                SEFC1_FlashPanelBaseAddrGet
 
-.rodata.sysTimePlibAPI%164
-                0x0000000001015b38       0x1c
+.rodata.sysTimePlibAPI%163
+                0x0000000001015a60       0x1c
  .rodata.sysTimePlibAPI
-                0x0000000001015b38       0x1c build/pic32cxmtg/debug/_ext/1545560501/initialization.o
+                0x0000000001015a60       0x1c build/pic32cxmtg/debug/_ext/1545560501/initialization.o
+
+.text.main%164  0x0000000001015a7c       0x1c
+ .text.main     0x0000000001015a7c       0x1c build/pic32cxmtg/debug/_ext/1360937237/main.o
+                0x0000000001015a7c                main
 
 .text.memcpy%165
-                0x0000000001015b54       0x1c
- .text.memcpy   0x0000000001015b54       0x1c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
-                0x0000000001015b54                memcpy
+                0x0000000001015a98       0x1c
+ .text.memcpy   0x0000000001015a98       0x1c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
+                0x0000000001015a98                memcpy
 
 .text.DRV_G3_MACRT_Close%166
                 0x00000000010001e8       0x18
@@ -2551,486 +2549,476 @@ LOAD stack
                 0x00000000010001e8                DRV_G3_MACRT_Close
 
 .text.DRV_G3_MACRT_EnableTX%167
-                0x0000000001015b70       0x18
+                0x0000000001015ab4       0x18
  .text.DRV_G3_MACRT_EnableTX
-                0x0000000001015b70       0x18 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
-                0x0000000001015b70                DRV_G3_MACRT_EnableTX
+                0x0000000001015ab4       0x18 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
+                0x0000000001015ab4                DRV_G3_MACRT_EnableTX
 
 .rodata.plla_cfg%168
-                0x0000000001015b88       0x18
+                0x0000000001015acc       0x18
  .rodata.plla_cfg
-                0x0000000001015b88       0x18 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
+                0x0000000001015acc       0x18 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
 
 .rodata.pllb_cfg%169
-                0x0000000001015ba0       0x18
+                0x0000000001015ae4       0x18
  .rodata.pllb_cfg
-                0x0000000001015ba0       0x18 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
+                0x0000000001015ae4       0x18 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
 
 .text.UART_ReadNotificationEnable%170
-                0x0000000001015bb8       0x18
+                0x0000000001015afc       0x18
  .text.UART_ReadNotificationEnable
-                0x0000000001015bb8       0x18 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
-                0x0000000001015bb8                UART_ReadNotificationEnable
+                0x0000000001015afc       0x18 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001015afc                UART_ReadNotificationEnable
 
 .text.SRV_PVDDMON_CallbackRegister%171
-                0x0000000001015bd0       0x18
+                0x0000000001015b14       0x18
  .text.SRV_PVDDMON_CallbackRegister
-                0x0000000001015bd0       0x18 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
-                0x0000000001015bd0                SRV_PVDDMON_CallbackRegister
+                0x0000000001015b14       0x18 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
+                0x0000000001015b14                SRV_PVDDMON_CallbackRegister
 
 .text.SYS_TIME_DelayIsComplete%172
-                0x0000000001015be8       0x18
+                0x0000000001015b2c       0x18
  .text.SYS_TIME_DelayIsComplete
-                0x0000000001015be8       0x18 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
-                0x0000000001015be8                SYS_TIME_DelayIsComplete
+                0x0000000001015b2c       0x18 build/pic32cxmtg/debug/_ext/1275873064/sys_time.o
+                0x0000000001015b2c                SYS_TIME_DelayIsComplete
 
 .text.APP_PLC_DataCfmCallback%173
-                0x0000000001015c00       0x18
+                0x0000000001015b44       0x18
  .text.APP_PLC_DataCfmCallback
-                0x0000000001015c00       0x18 build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001015b44       0x18 build/pic32cxmtg/debug/_ext/1360937237/app.o
 
 .text.resetUARTTimeout%174
-                0x0000000001015c18       0x18
+                0x0000000001015b5c       0x18
  .text.resetUARTTimeout
-                0x0000000001015c18       0x18 build/pic32cxmtg/debug/_ext/1360937237/app.o
-                0x0000000001015c18                resetUARTTimeout
+                0x0000000001015b5c       0x18 build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001015b5c                resetUARTTimeout
 
 .text.CLK_DisableMainRCOscillator%175
-                0x0000000001015c30       0x16
+                0x0000000001015b74       0x16
  .text.CLK_DisableMainRCOscillator
-                0x0000000001015c30       0x16 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
-                0x0000000001015c30                CLK_DisableMainRCOscillator
+                0x0000000001015b74       0x16 build/pic32cxmtg/debug/_ext/33938007/plib_clk.o
+                0x0000000001015b74                CLK_DisableMainRCOscillator
 
 .text.BSP_Initialize%176
-                0x0000000001015c48       0x14
+                0x0000000001015b8c       0x14
  .text.BSP_Initialize
-                0x0000000001015c48       0x14 build/pic32cxmtg/debug/_ext/1785439515/bsp.o
-                0x0000000001015c48                BSP_Initialize
+                0x0000000001015b8c       0x14 build/pic32cxmtg/debug/_ext/1785439515/bsp.o
+                0x0000000001015b8c                BSP_Initialize
 
 .text.DRV_G3_MACRT_Status%177
-                0x0000000001015c5c       0x14
+                0x0000000001015ba0       0x14
  .text.DRV_G3_MACRT_Status
-                0x0000000001015c5c       0x14 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
-                0x0000000001015c5c                DRV_G3_MACRT_Status
+                0x0000000001015ba0       0x14 build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
+                0x0000000001015ba0                DRV_G3_MACRT_Status
 
 .text.FLEXCOM5_SPI_IsTransmitterBusy%178
-                0x0000000001015c70       0x14
+                0x0000000001015bb4       0x14
  .text.FLEXCOM5_SPI_IsTransmitterBusy
-                0x0000000001015c70       0x14 build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
-                0x0000000001015c70                FLEXCOM5_SPI_IsTransmitterBusy
+                0x0000000001015bb4       0x14 build/pic32cxmtg/debug/_ext/1016581701/plib_flexcom5_spi_master.o
+                0x0000000001015bb4                FLEXCOM5_SPI_IsTransmitterBusy
 
 .text.TRNG_ReadData%179
-                0x0000000001015c84       0x14
+                0x0000000001015bc8       0x14
  .text.TRNG_ReadData
-                0x0000000001015c84       0x14 build/pic32cxmtg/debug/_ext/1051565808/plib_trng.o
-                0x0000000001015c84                TRNG_ReadData
+                0x0000000001015bc8       0x14 build/pic32cxmtg/debug/_ext/1051565808/plib_trng.o
+                0x0000000001015bc8                TRNG_ReadData
 
 .text.UART_WritePendingBytesGet%180
-                0x0000000001015c98       0x14
+                0x0000000001015bdc       0x14
  .text.UART_WritePendingBytesGet
-                0x0000000001015c98       0x14 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001015bdc       0x14 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
 
 .text.UART_ReadCountGet%181
-                0x0000000001015cac       0x14
+                0x0000000001015bf0       0x14
  .text.UART_ReadCountGet
-                0x0000000001015cac       0x14 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
-                0x0000000001015cac                UART_ReadCountGet
+                0x0000000001015bf0       0x14 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001015bf0                UART_ReadCountGet
 
 .text.SYS_Tasks%182
-                0x0000000001015cc0       0x14
+                0x0000000001015c04       0x14
  .text.SYS_Tasks
-                0x0000000001015cc0       0x14 build/pic32cxmtg/debug/_ext/1545560501/tasks.o
-                0x0000000001015cc0                SYS_Tasks
+                0x0000000001015c04       0x14 build/pic32cxmtg/debug/_ext/1545560501/tasks.o
+                0x0000000001015c04                SYS_Tasks
 
-.rodata%183     0x0000000001015cd4       0x14
- .rodata        0x0000000001015cd4       0x14 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+.rodata%183     0x0000000001015c18       0x14
+ .rodata        0x0000000001015c18       0x14 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
 
 .text.memset%184
-                0x0000000001015ce8       0x14
- .text.memset   0x0000000001015ce8       0x14 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
-                0x0000000001015ce8                memset
+                0x0000000001015c2c       0x14
+ .text.memset   0x0000000001015c2c       0x14 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memset.o)
+                0x0000000001015c2c                memset
 
 .text.NVIC_INT_Disable%185
-                0x0000000001015cfc       0x12
+                0x0000000001015c40       0x12
  .text.NVIC_INT_Disable
-                0x0000000001015cfc       0x12 build/pic32cxmtg/debug/_ext/1051740869/plib_nvic.o
-                0x0000000001015cfc                NVIC_INT_Disable
+                0x0000000001015c40       0x12 build/pic32cxmtg/debug/_ext/1051740869/plib_nvic.o
+                0x0000000001015c40                NVIC_INT_Disable
 
 .text.NVIC_INT_Restore%186
-                0x0000000001015d0e       0x12
+                0x0000000001015c52       0x12
  .text.NVIC_INT_Restore
-                0x0000000001015d0e       0x12 build/pic32cxmtg/debug/_ext/1051740869/plib_nvic.o
-                0x0000000001015d0e                NVIC_INT_Restore
+                0x0000000001015c52       0x12 build/pic32cxmtg/debug/_ext/1051740869/plib_nvic.o
+                0x0000000001015c52                NVIC_INT_Restore
 
 .text.__dinit_clear%187
-                0x0000000001015d20       0x12
+                0x0000000001015c64       0x12
  .text.__dinit_clear
-                0x0000000001015d20       0x12 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
-                0x0000000001015d20                __dinit_clear
-                0x0000000001015d20                __dinit_clear_needed
+                0x0000000001015c64       0x12 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+                0x0000000001015c64                __dinit_clear
+                0x0000000001015c64                __dinit_clear_needed
 
 .rodata.PIO_INDEX%188
-                0x0000000001015d34       0x10
+                0x0000000001015c78       0x10
  .rodata.PIO_INDEX
-                0x0000000001015d34       0x10 build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x0000000001015c78       0x10 build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
 
 .rodata.PIO_REGS%189
-                0x0000000001015d44       0x10
+                0x0000000001015c88       0x10
  .rodata.PIO_REGS
-                0x0000000001015d44       0x10 build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
+                0x0000000001015c88       0x10 build/pic32cxmtg/debug/_ext/33925603/plib_pio.o
 
 .text.TRNG_Initialize%190
-                0x0000000001015d54       0x10
+                0x0000000001015c98       0x10
  .text.TRNG_Initialize
-                0x0000000001015d54       0x10 build/pic32cxmtg/debug/_ext/1051565808/plib_trng.o
-                0x0000000001015d54                TRNG_Initialize
+                0x0000000001015c98       0x10 build/pic32cxmtg/debug/_ext/1051565808/plib_trng.o
+                0x0000000001015c98                TRNG_Initialize
 
 .text.UART_WriteNotificationEnable%191
-                0x0000000001015d64       0x10
+                0x0000000001015ca8       0x10
  .text.UART_WriteNotificationEnable
-                0x0000000001015d64       0x10 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
-                0x0000000001015d64                UART_WriteNotificationEnable
+                0x0000000001015ca8       0x10 build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001015ca8                UART_WriteNotificationEnable
 
 .text.SRV_PVDDMON_Initialize%192
-                0x0000000001015d74       0x10
+                0x0000000001015cb8       0x10
  .text.SRV_PVDDMON_Initialize
-                0x0000000001015d74       0x10 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
-                0x0000000001015d74                SRV_PVDDMON_Initialize
+                0x0000000001015cb8       0x10 build/pic32cxmtg/debug/_ext/1488757394/srv_pvddmon.o
+                0x0000000001015cb8                SRV_PVDDMON_Initialize
 
 .text.APP_PLC_ExceptionCallback%193
-                0x0000000001015d84       0x10
+                0x0000000001015cc8       0x10
  .text.APP_PLC_ExceptionCallback
-                0x0000000001015d84       0x10 build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001015cc8       0x10 build/pic32cxmtg/debug/_ext/1360937237/app.o
 
-.text.DRV_PLC_BOOT_Status%194
-                0x0000000001015d94        0xc
+.rodata.APP_Tasks.str1.4%194
+                0x0000000001015cd8       0x10
+ .rodata.APP_Tasks.str1.4
+                0x0000000001015cd8       0x10 build/pic32cxmtg/debug/_ext/1360937237/app.o
+
+.text.DRV_PLC_BOOT_Status%195
+                0x0000000001015ce8        0xc
  .text.DRV_PLC_BOOT_Status
-                0x0000000001015d94        0xc build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
-                0x0000000001015d94                DRV_PLC_BOOT_Status
+                0x0000000001015ce8        0xc build/pic32cxmtg/debug/_ext/160729472/drv_plc_boot.o
+                0x0000000001015ce8                DRV_PLC_BOOT_Status
 
-.text.DRV_G3_MACRT_InitCallbackRegister%195
-                0x0000000001015da0        0xc
+.text.DRV_G3_MACRT_InitCallbackRegister%196
+                0x0000000001015cf4        0xc
  .text.DRV_G3_MACRT_InitCallbackRegister
-                0x0000000001015da0        0xc build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
-                0x0000000001015da0                DRV_G3_MACRT_InitCallbackRegister
+                0x0000000001015cf4        0xc build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
+                0x0000000001015cf4                DRV_G3_MACRT_InitCallbackRegister
 
-.text.DRV_G3_MACRT_TxCfmCallbackRegister%196
-                0x0000000001015dac        0xc
+.text.DRV_G3_MACRT_TxCfmCallbackRegister%197
+                0x0000000001015d00        0xc
  .text.DRV_G3_MACRT_TxCfmCallbackRegister
-                0x0000000001015dac        0xc build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
-                0x0000000001015dac                DRV_G3_MACRT_TxCfmCallbackRegister
+                0x0000000001015d00        0xc build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
+                0x0000000001015d00                DRV_G3_MACRT_TxCfmCallbackRegister
 
-.text.DRV_G3_MACRT_DataIndCallbackRegister%197
-                0x0000000001015db8        0xc
+.text.DRV_G3_MACRT_DataIndCallbackRegister%198
+                0x0000000001015d0c        0xc
  .text.DRV_G3_MACRT_DataIndCallbackRegister
-                0x0000000001015db8        0xc build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
-                0x0000000001015db8                DRV_G3_MACRT_DataIndCallbackRegister
+                0x0000000001015d0c        0xc build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
+                0x0000000001015d0c                DRV_G3_MACRT_DataIndCallbackRegister
 
-.text.DRV_G3_MACRT_RxParamsIndCallbackRegister%198
-                0x0000000001015dc4        0xc
+.text.DRV_G3_MACRT_RxParamsIndCallbackRegister%199
+                0x0000000001015d18        0xc
  .text.DRV_G3_MACRT_RxParamsIndCallbackRegister
-                0x0000000001015dc4        0xc build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
-                0x0000000001015dc4                DRV_G3_MACRT_RxParamsIndCallbackRegister
+                0x0000000001015d18        0xc build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
+                0x0000000001015d18                DRV_G3_MACRT_RxParamsIndCallbackRegister
 
-.text.DRV_G3_MACRT_ExceptionCallbackRegister%199
-                0x0000000001015dd0        0xc
+.text.DRV_G3_MACRT_ExceptionCallbackRegister%200
+                0x0000000001015d24        0xc
  .text.DRV_G3_MACRT_ExceptionCallbackRegister
-                0x0000000001015dd0        0xc build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
-                0x0000000001015dd0                DRV_G3_MACRT_ExceptionCallbackRegister
+                0x0000000001015d24        0xc build/pic32cxmtg/debug/_ext/1804977744/drv_g3_macrt.o
+                0x0000000001015d24                DRV_G3_MACRT_ExceptionCallbackRegister
 
-.text.ADC_ChannelsEnable%200
-                0x0000000001015ddc        0xc
+.text.ADC_ChannelsEnable%201
+                0x0000000001015d30        0xc
  .text.ADC_ChannelsEnable
-                0x0000000001015ddc        0xc build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
-                0x0000000001015ddc                ADC_ChannelsEnable
+                0x0000000001015d30        0xc build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
+                0x0000000001015d30                ADC_ChannelsEnable
 
-.text.ADC_ChannelsDisable%201
-                0x0000000001015de8        0xc
+.text.ADC_ChannelsDisable%202
+                0x0000000001015d3c        0xc
  .text.ADC_ChannelsDisable
-                0x0000000001015de8        0xc build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
-                0x0000000001015de8                ADC_ChannelsDisable
+                0x0000000001015d3c        0xc build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
+                0x0000000001015d3c                ADC_ChannelsDisable
 
-.text.ADC_ChannelsInterruptDisable%202
-                0x0000000001015df4        0xc
+.text.ADC_ChannelsInterruptDisable%203
+                0x0000000001015d48        0xc
  .text.ADC_ChannelsInterruptDisable
-                0x0000000001015df4        0xc build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
-                0x0000000001015df4                ADC_ChannelsInterruptDisable
+                0x0000000001015d48        0xc build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
+                0x0000000001015d48                ADC_ChannelsInterruptDisable
 
-.text.ADC_ConversionStart%203
-                0x0000000001015e00        0xc
+.text.ADC_ConversionStart%204
+                0x0000000001015d54        0xc
  .text.ADC_ConversionStart
-                0x0000000001015e00        0xc build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
-                0x0000000001015e00                ADC_ConversionStart
+                0x0000000001015d54        0xc build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
+                0x0000000001015d54                ADC_ConversionStart
 
-.text.ADC_CallbackRegister%204
-                0x0000000001015e0c        0xc
+.text.ADC_CallbackRegister%205
+                0x0000000001015d60        0xc
  .text.ADC_CallbackRegister
-                0x0000000001015e0c        0xc build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
-                0x0000000001015e0c                ADC_CallbackRegister
+                0x0000000001015d60        0xc build/pic32cxmtg/debug/_ext/33940185/plib_adc.o
+                0x0000000001015d60                ADC_CallbackRegister
 
-.text.TC0_CH0_TimerStart%205
-                0x0000000001015e18        0xc
+.text.TC0_CH0_TimerStart%206
+                0x0000000001015d6c        0xc
  .text.TC0_CH0_TimerStart
-                0x0000000001015e18        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
-                0x0000000001015e18                TC0_CH0_TimerStart
+                0x0000000001015d6c        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
+                0x0000000001015d6c                TC0_CH0_TimerStart
 
-.text.TC0_CH0_TimerStop%206
-                0x0000000001015e24        0xc
+.text.TC0_CH0_TimerStop%207
+                0x0000000001015d78        0xc
  .text.TC0_CH0_TimerStop
-                0x0000000001015e24        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
-                0x0000000001015e24                TC0_CH0_TimerStop
+                0x0000000001015d78        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
+                0x0000000001015d78                TC0_CH0_TimerStop
 
-.text.TC0_CH0_TimerPeriodSet%207
-                0x0000000001015e30        0xc
+.text.TC0_CH0_TimerPeriodSet%208
+                0x0000000001015d84        0xc
  .text.TC0_CH0_TimerPeriodSet
-                0x0000000001015e30        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
-                0x0000000001015e30                TC0_CH0_TimerPeriodSet
+                0x0000000001015d84        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
+                0x0000000001015d84                TC0_CH0_TimerPeriodSet
 
-.text.TC0_CH0_TimerCompareSet%208
-                0x0000000001015e3c        0xc
+.text.TC0_CH0_TimerCompareSet%209
+                0x0000000001015d90        0xc
  .text.TC0_CH0_TimerCompareSet
-                0x0000000001015e3c        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
-                0x0000000001015e3c                TC0_CH0_TimerCompareSet
+                0x0000000001015d90        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
+                0x0000000001015d90                TC0_CH0_TimerCompareSet
 
-.text.TC0_CH0_TimerCounterGet%209
-                0x0000000001015e48        0xc
+.text.TC0_CH0_TimerCounterGet%210
+                0x0000000001015d9c        0xc
  .text.TC0_CH0_TimerCounterGet
-                0x0000000001015e48        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
-                0x0000000001015e48                TC0_CH0_TimerCounterGet
+                0x0000000001015d9c        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
+                0x0000000001015d9c                TC0_CH0_TimerCounterGet
 
-.text.TC0_CH0_TimerCallbackRegister%210
-                0x0000000001015e54        0xc
+.text.TC0_CH0_TimerCallbackRegister%211
+                0x0000000001015da8        0xc
  .text.TC0_CH0_TimerCallbackRegister
-                0x0000000001015e54        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
-                0x0000000001015e54                TC0_CH0_TimerCallbackRegister
+                0x0000000001015da8        0xc build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
+                0x0000000001015da8                TC0_CH0_TimerCallbackRegister
 
-.text.UART_ReadThresholdSet%211
-                0x0000000001015e60        0xc
+.text.UART_ReadThresholdSet%212
+                0x0000000001015db4        0xc
  .text.UART_ReadThresholdSet
-                0x0000000001015e60        0xc build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
-                0x0000000001015e60                UART_ReadThresholdSet
+                0x0000000001015db4        0xc build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001015db4                UART_ReadThresholdSet
 
-.text.UART_ReadCallbackRegister%212
-                0x0000000001015e6c        0xc
+.text.UART_ReadCallbackRegister%213
+                0x0000000001015dc0        0xc
  .text.UART_ReadCallbackRegister
-                0x0000000001015e6c        0xc build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
-                0x0000000001015e6c                UART_ReadCallbackRegister
+                0x0000000001015dc0        0xc build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001015dc0                UART_ReadCallbackRegister
 
-.text.UART_WriteFreeBufferCountGet%213
-                0x0000000001015e78        0xc
+.text.UART_WriteFreeBufferCountGet%214
+                0x0000000001015dcc        0xc
  .text.UART_WriteFreeBufferCountGet
-                0x0000000001015e78        0xc build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
-                0x0000000001015e78                UART_WriteFreeBufferCountGet
-
-.rodata.main.str1.4%214
-                0x0000000001015e84        0xc
- .rodata.main.str1.4
-                0x0000000001015e84        0xc build/pic32cxmtg/debug/_ext/1360937237/main.o
+                0x0000000001015dcc        0xc build/pic32cxmtg/debug/_ext/1051552217/plib_uart.o
+                0x0000000001015dcc                UART_WriteFreeBufferCountGet
 
 .text.APP_PLC_Timer1_Callback%215
-                0x0000000001015e90        0xc
+                0x0000000001015dd8        0xc
  .text.APP_PLC_Timer1_Callback
-                0x0000000001015e90        0xc build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001015dd8        0xc build/pic32cxmtg/debug/_ext/1360937237/app.o
 
 .text.APP_PLC_Timer2_Callback%216
-                0x0000000001015e9c        0xc
+                0x0000000001015de4        0xc
  .text.APP_PLC_Timer2_Callback
-                0x0000000001015e9c        0xc build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001015de4        0xc build/pic32cxmtg/debug/_ext/1360937237/app.o
 
 .text.APP_PLC_Timer3_Callback%217
-                0x0000000001015ea8        0xc
+                0x0000000001015df0        0xc
  .text.APP_PLC_Timer3_Callback
-                0x0000000001015ea8        0xc build/pic32cxmtg/debug/_ext/1360937237/app.o
+                0x0000000001015df0        0xc build/pic32cxmtg/debug/_ext/1360937237/app.o
 
-.rodata.appTxPayload%218
-                0x0000000001015eb4        0xc
- .rodata.appTxPayload
-                0x0000000001015eb4        0xc build/pic32cxmtg/debug/_ext/1360937237/app.o
-
-.text.TC0_CH0_TimerFrequencyGet%219
-                0x0000000001015ec0        0x8
+.text.TC0_CH0_TimerFrequencyGet%218
+                0x0000000001015dfc        0x8
  .text.TC0_CH0_TimerFrequencyGet
-                0x0000000001015ec0        0x8 build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
-                0x0000000001015ec0                TC0_CH0_TimerFrequencyGet
+                0x0000000001015dfc        0x8 build/pic32cxmtg/debug/_ext/139641592/plib_tc0.o
+                0x0000000001015dfc                TC0_CH0_TimerFrequencyGet
 
-.text.SYS_INT_Disable%220
-                0x0000000001015ec8        0x8
+.text.SYS_INT_Disable%219
+                0x0000000001015e04        0x8
  .text.SYS_INT_Disable
-                0x0000000001015ec8        0x8 build/pic32cxmtg/debug/_ext/1787564926/sys_int.o
-                0x0000000001015ec8                SYS_INT_Disable
+                0x0000000001015e04        0x8 build/pic32cxmtg/debug/_ext/1787564926/sys_int.o
+                0x0000000001015e04                SYS_INT_Disable
 
-.text.SYS_INT_Restore%221
-                0x0000000001015ed0        0x8
+.text.SYS_INT_Restore%220
+                0x0000000001015e0c        0x8
  .text.SYS_INT_Restore
-                0x0000000001015ed0        0x8 build/pic32cxmtg/debug/_ext/1787564926/sys_int.o
-                0x0000000001015ed0                SYS_INT_Restore
+                0x0000000001015e0c        0x8 build/pic32cxmtg/debug/_ext/1787564926/sys_int.o
+                0x0000000001015e0c                SYS_INT_Restore
 
-.rodata.sysTimeInitData%222
-                0x0000000001015ed8        0x8
+.rodata.sysTimeInitData%221
+                0x0000000001015e14        0x8
  .rodata.sysTimeInitData
-                0x0000000001015ed8        0x8 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
+                0x0000000001015e14        0x8 build/pic32cxmtg/debug/_ext/1545560501/initialization.o
 
-.rodata.usartReadEventHandler.str1.4%223
-                0x0000000001015ee0        0x8
- .rodata.usartReadEventHandler.str1.4
-                0x0000000001015ee0        0x8 build/pic32cxmtg/debug/_ext/1360937237/app.o
-
-.text.SRV_PCOUP_Get_Default_Branch%224
-                0x0000000001015ee8        0x4
+.text.SRV_PCOUP_Get_Default_Branch%222
+                0x0000000001015e1c        0x4
  .text.SRV_PCOUP_Get_Default_Branch
-                0x0000000001015ee8        0x4 build/pic32cxmtg/debug/_ext/1540903485/srv_pcoup.o
-                0x0000000001015ee8                SRV_PCOUP_Get_Default_Branch
+                0x0000000001015e1c        0x4 build/pic32cxmtg/debug/_ext/1540903485/srv_pcoup.o
+                0x0000000001015e1c                SRV_PCOUP_Get_Default_Branch
 
-.text.NonMaskableInt_Handler%225
-                0x0000000001015eec        0x4
+.text.NonMaskableInt_Handler%223
+                0x0000000001015e20        0x4
  .text.NonMaskableInt_Handler
-                0x0000000001015eec        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
-                0x0000000001015eec                NonMaskableInt_Handler
+                0x0000000001015e20        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
+                0x0000000001015e20                NonMaskableInt_Handler
 
-.text.HardFault_Handler%226
-                0x0000000001015ef0        0x4
+.text.HardFault_Handler%224
+                0x0000000001015e24        0x4
  .text.HardFault_Handler
-                0x0000000001015ef0        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
-                0x0000000001015ef0                HardFault_Handler
+                0x0000000001015e24        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
+                0x0000000001015e24                HardFault_Handler
 
-.text.DebugMonitor_Handler%227
-                0x0000000001015ef4        0x4
+.text.DebugMonitor_Handler%225
+                0x0000000001015e28        0x4
  .text.DebugMonitor_Handler
-                0x0000000001015ef4        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
-                0x0000000001015ef4                DebugMonitor_Handler
+                0x0000000001015e28        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
+                0x0000000001015e28                DebugMonitor_Handler
 
-.text.MemoryManagement_Handler%228
-                0x0000000001015ef8        0x4
+.text.MemoryManagement_Handler%226
+                0x0000000001015e2c        0x4
  .text.MemoryManagement_Handler
-                0x0000000001015ef8        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
-                0x0000000001015ef8                MemoryManagement_Handler
+                0x0000000001015e2c        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
+                0x0000000001015e2c                MemoryManagement_Handler
 
-.text.BusFault_Handler%229
-                0x0000000001015efc        0x4
+.text.BusFault_Handler%227
+                0x0000000001015e30        0x4
  .text.BusFault_Handler
-                0x0000000001015efc        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
-                0x0000000001015efc                BusFault_Handler
+                0x0000000001015e30        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
+                0x0000000001015e30                BusFault_Handler
 
-.text.UsageFault_Handler%230
-                0x0000000001015f00        0x4
+.text.UsageFault_Handler%228
+                0x0000000001015e34        0x4
  .text.UsageFault_Handler
-                0x0000000001015f00        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
-                0x0000000001015f00                UsageFault_Handler
+                0x0000000001015e34        0x4 build/pic32cxmtg/debug/_ext/1545560501/exceptions.o
+                0x0000000001015e34                UsageFault_Handler
 
-.text.Dummy_Handler%231
-                0x0000000001015f04        0x4
+.text.Dummy_Handler%229
+                0x0000000001015e38        0x4
  .text.Dummy_Handler
-                0x0000000001015f04        0x4 build/pic32cxmtg/debug/_ext/1545560501/interrupts.o
-                0x0000000001015f04                FLEXCOM1_Handler
-                0x0000000001015f04                MATRIX0_Handler
-                0x0000000001015f04                TC1_C0SEC_Handler
-                0x0000000001015f04                SVCall_Handler
-                0x0000000001015f04                AESB_AESBSEC_Handler
-                0x0000000001015f04                TC0_CH2_Handler
-                0x0000000001015f04                TC3_CH1_Handler
-                0x0000000001015f04                TRNG_Handler
-                0x0000000001015f04                MEM2MEM1_Handler
-                0x0000000001015f04                MEM2MEM0_Handler
-                0x0000000001015f04                FLEXCOM4_Handler
-                0x0000000001015f04                SysTick_Handler
-                0x0000000001015f04                SUPC_WKUP5_Handler
-                0x0000000001015f04                SUPC_WKUP10_Handler
-                0x0000000001015f04                SEFC1_Handler
-                0x0000000001015f04                PendSV_Handler
-                0x0000000001015f04                TC0_CH1_Handler
-                0x0000000001015f04                SHA_Handler
-                0x0000000001015f04                QSPI_Handler
-                0x0000000001015f04                TC1_C2SEC_Handler
-                0x0000000001015f04                MATRIX1_Handler
-                0x0000000001015f04                TC1_CH2_Handler
-                0x0000000001015f04                RTT_Handler
-                0x0000000001015f04                FLEXCOM6_Handler
-                0x0000000001015f04                SUPC_WKUP8_Handler
-                0x0000000001015f04                PIOB_Handler
-                0x0000000001015f04                RTC_Handler
-                0x0000000001015f04                TC2_C2SEC_Handler
-                0x0000000001015f04                MATRIX3_Handler
-                0x0000000001015f04                SEFC0_Handler
-                0x0000000001015f04                TC0_C0SEC_Handler
-                0x0000000001015f04                Dummy_Handler
-                0x0000000001015f04                MATRIX2_Handler
-                0x0000000001015f04                SUPC_WKUP9_Handler
-                0x0000000001015f04                DWDT0_Handler
-                0x0000000001015f04                TC3_CH2_Handler
-                0x0000000001015f04                SUPC_WKUP15_Handler
-                0x0000000001015f04                PIOC_SEC_Handler
-                0x0000000001015f04                SUPC_WKUP14_Handler
-                0x0000000001015f04                TC2_CH0_Handler
-                0x0000000001015f04                MCSPI_Handler
-                0x0000000001015f04                SUPC_WKUP12_Handler
-                0x0000000001015f04                AES_AESSEC_Handler
-                0x0000000001015f04                SUPC_WKUP11_Handler
-                0x0000000001015f04                TRNG_TRNGSEC_Handler
-                0x0000000001015f04                TC3_CH0_Handler
-                0x0000000001015f04                TC1_CH0_Handler
-                0x0000000001015f04                TC0_C1SEC_Handler
-                0x0000000001015f04                ACC_Handler
-                0x0000000001015f04                PMC_Handler
-                0x0000000001015f04                TC3_C2SEC_Handler
-                0x0000000001015f04                PWM_Handler
-                0x0000000001015f04                CPKCC_Handler
-                0x0000000001015f04                TC2_CH2_Handler
-                0x0000000001015f04                PIOA_SEC_Handler
-                0x0000000001015f04                TC1_C1SEC_Handler
-                0x0000000001015f04                SUPC_WKUP6_Handler
-                0x0000000001015f04                SUPC_Handler
-                0x0000000001015f04                TC2_CH1_Handler
-                0x0000000001015f04                FLEXCOM0_InterruptHandler
-                0x0000000001015f04                PIOB_SEC_Handler
-                0x0000000001015f04                TC1_CH1_Handler
-                0x0000000001015f04                PIOD_Handler
-                0x0000000001015f04                FLEXCOM7_Handler
-                0x0000000001015f04                SUPC_WKUP4_Handler
-                0x0000000001015f04                SUPC_WKUP3_Handler
-                0x0000000001015f04                TC2_C1SEC_Handler
-                0x0000000001015f04                TC3_C1SEC_Handler
-                0x0000000001015f04                PIOC_Handler
-                0x0000000001015f04                AESB_Handler
-                0x0000000001015f04                FLEXCOM2_Handler
-                0x0000000001015f04                ICM_ICMSEC_Handler
-                0x0000000001015f04                PIOD_SEC_Handler
-                0x0000000001015f04                SLCDC_Handler
-                0x0000000001015f04                SUPC_WKUP13_Handler
-                0x0000000001015f04                FLEXCOM3_Handler
-                0x0000000001015f04                TC2_C0SEC_Handler
-                0x0000000001015f04                RSTC_Handler
-                0x0000000001015f04                DWDT1_Handler
-                0x0000000001015f04                AES_Handler
-                0x0000000001015f04                ICM_Handler
-                0x0000000001015f04                TC0_C2SEC_Handler
-                0x0000000001015f04                SUPC_WKUP7_Handler
-                0x0000000001015f04                TC3_C0SEC_Handler
-                0x0000000001015f04                SHA_SHASEC_Handler
+                0x0000000001015e38        0x4 build/pic32cxmtg/debug/_ext/1545560501/interrupts.o
+                0x0000000001015e38                FLEXCOM1_Handler
+                0x0000000001015e38                MATRIX0_Handler
+                0x0000000001015e38                TC1_C0SEC_Handler
+                0x0000000001015e38                SVCall_Handler
+                0x0000000001015e38                AESB_AESBSEC_Handler
+                0x0000000001015e38                TC0_CH2_Handler
+                0x0000000001015e38                TC3_CH1_Handler
+                0x0000000001015e38                TRNG_Handler
+                0x0000000001015e38                MEM2MEM1_Handler
+                0x0000000001015e38                MEM2MEM0_Handler
+                0x0000000001015e38                FLEXCOM4_Handler
+                0x0000000001015e38                SysTick_Handler
+                0x0000000001015e38                SUPC_WKUP5_Handler
+                0x0000000001015e38                SUPC_WKUP10_Handler
+                0x0000000001015e38                SEFC1_Handler
+                0x0000000001015e38                PendSV_Handler
+                0x0000000001015e38                TC0_CH1_Handler
+                0x0000000001015e38                SHA_Handler
+                0x0000000001015e38                QSPI_Handler
+                0x0000000001015e38                TC1_C2SEC_Handler
+                0x0000000001015e38                MATRIX1_Handler
+                0x0000000001015e38                TC1_CH2_Handler
+                0x0000000001015e38                RTT_Handler
+                0x0000000001015e38                FLEXCOM6_Handler
+                0x0000000001015e38                SUPC_WKUP8_Handler
+                0x0000000001015e38                PIOB_Handler
+                0x0000000001015e38                RTC_Handler
+                0x0000000001015e38                TC2_C2SEC_Handler
+                0x0000000001015e38                MATRIX3_Handler
+                0x0000000001015e38                SEFC0_Handler
+                0x0000000001015e38                TC0_C0SEC_Handler
+                0x0000000001015e38                Dummy_Handler
+                0x0000000001015e38                MATRIX2_Handler
+                0x0000000001015e38                SUPC_WKUP9_Handler
+                0x0000000001015e38                DWDT0_Handler
+                0x0000000001015e38                TC3_CH2_Handler
+                0x0000000001015e38                SUPC_WKUP15_Handler
+                0x0000000001015e38                PIOC_SEC_Handler
+                0x0000000001015e38                SUPC_WKUP14_Handler
+                0x0000000001015e38                TC2_CH0_Handler
+                0x0000000001015e38                MCSPI_Handler
+                0x0000000001015e38                SUPC_WKUP12_Handler
+                0x0000000001015e38                AES_AESSEC_Handler
+                0x0000000001015e38                SUPC_WKUP11_Handler
+                0x0000000001015e38                TRNG_TRNGSEC_Handler
+                0x0000000001015e38                TC3_CH0_Handler
+                0x0000000001015e38                TC1_CH0_Handler
+                0x0000000001015e38                TC0_C1SEC_Handler
+                0x0000000001015e38                ACC_Handler
+                0x0000000001015e38                PMC_Handler
+                0x0000000001015e38                TC3_C2SEC_Handler
+                0x0000000001015e38                PWM_Handler
+                0x0000000001015e38                CPKCC_Handler
+                0x0000000001015e38                TC2_CH2_Handler
+                0x0000000001015e38                PIOA_SEC_Handler
+                0x0000000001015e38                TC1_C1SEC_Handler
+                0x0000000001015e38                SUPC_WKUP6_Handler
+                0x0000000001015e38                SUPC_Handler
+                0x0000000001015e38                TC2_CH1_Handler
+                0x0000000001015e38                FLEXCOM0_InterruptHandler
+                0x0000000001015e38                PIOB_SEC_Handler
+                0x0000000001015e38                TC1_CH1_Handler
+                0x0000000001015e38                PIOD_Handler
+                0x0000000001015e38                FLEXCOM7_Handler
+                0x0000000001015e38                SUPC_WKUP4_Handler
+                0x0000000001015e38                SUPC_WKUP3_Handler
+                0x0000000001015e38                TC2_C1SEC_Handler
+                0x0000000001015e38                TC3_C1SEC_Handler
+                0x0000000001015e38                PIOC_Handler
+                0x0000000001015e38                AESB_Handler
+                0x0000000001015e38                FLEXCOM2_Handler
+                0x0000000001015e38                ICM_ICMSEC_Handler
+                0x0000000001015e38                PIOD_SEC_Handler
+                0x0000000001015e38                SLCDC_Handler
+                0x0000000001015e38                SUPC_WKUP13_Handler
+                0x0000000001015e38                FLEXCOM3_Handler
+                0x0000000001015e38                TC2_C0SEC_Handler
+                0x0000000001015e38                RSTC_Handler
+                0x0000000001015e38                DWDT1_Handler
+                0x0000000001015e38                AES_Handler
+                0x0000000001015e38                ICM_Handler
+                0x0000000001015e38                TC0_C2SEC_Handler
+                0x0000000001015e38                SUPC_WKUP7_Handler
+                0x0000000001015e38                TC3_C0SEC_Handler
+                0x0000000001015e38                SHA_SHASEC_Handler
 
-.text.__dummy_decompress%232
-                0x0000000001015f08        0x4
+.text.__dummy_decompress%230
+                0x0000000001015e3c        0x4
  .text.__dummy_decompress
-                0x0000000001015f08        0x4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
-                0x0000000001015f08                __dinit_decompress
-                0x0000000001015f08                __dinit_copy_val_data
-                0x0000000001015f08                __dinit_copy_emb
+                0x0000000001015e3c        0x4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+                0x0000000001015e3c                __dinit_decompress
+                0x0000000001015e3c                __dinit_copy_val_data
+                0x0000000001015e3c                __dinit_copy_emb
 
-.text%233       0x0000000001015f0c        0x4
- .text          0x0000000001015f0c        0x4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
-                0x0000000001015f0c                __aeabi_idiv0
-                0x0000000001015f0c                __aeabi_ldiv0
+.text%231       0x0000000001015e40        0x4
+ .text          0x0000000001015e40        0x4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+                0x0000000001015e40                __aeabi_idiv0
+                0x0000000001015e40                __aeabi_ldiv0
 
-.text.Dummy_App_Func%234
-                0x000000000101595a        0x2
+.text.Dummy_App_Func%232
+                0x0000000001015882        0x2
  .text.Dummy_App_Func
-                0x000000000101595a        0x2 build/pic32cxmtg/debug/_ext/1545560501/startup_xc32.o
-                0x000000000101595a                _on_bootstrap
-                0x000000000101595a                __xc32_on_reset
-                0x000000000101595a                Dummy_App_Func
-                0x000000000101595a                __xc32_on_bootstrap
+                0x0000000001015882        0x2 build/pic32cxmtg/debug/_ext/1545560501/startup_xc32.o
+                0x0000000001015882                _on_bootstrap
+                0x0000000001015882                __xc32_on_reset
+                0x0000000001015882                Dummy_App_Func
+                0x0000000001015882                __xc32_on_bootstrap
 
-.text.__dummy%235
-                0x0000000001015c46        0x2
- .text.__dummy  0x0000000001015c46        0x2 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
-                0x0000000001015c46                __init_stdio
-                0x0000000001015c46                __init_host
+.text.__dummy%233
+                0x0000000001015b8a        0x2
+ .text.__dummy  0x0000000001015b8a        0x2 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libg-musl.a(__libc_start_main.o)
+                0x0000000001015b8a                __init_stdio
+                0x0000000001015b8a                __init_host
